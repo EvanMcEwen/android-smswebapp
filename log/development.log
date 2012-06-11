@@ -8,3 +8,19 @@ Started GET "/rails/info/properties" for 127.0.0.1 at Mon Jun 11 19:33:31 -0400 
   Processing by Rails::InfoController#properties as */*
 Rendered inline template (1.5ms)
 Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Mon Jun 11 19:40:52 -0400 2012
+Served asset /rails.png - 304 Not Modified (1ms)
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at Mon Jun 11 19:40:54 -0400 2012
+  Processing by Rails::InfoController#properties as */*
+Rendered inline template (1.6ms)
+Completed 200 OK in 46ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (10.3ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (11.7ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (3.2ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('0')
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
