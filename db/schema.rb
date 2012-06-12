@@ -10,7 +10,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120612001905) do
+ActiveRecord::Schema.define(:version => 20120612215059) do
+
+  create_table "devices", :force => true do |t|
+    t.string   "device_id"
+    t.string   "reg_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "devices", ["user_id"], :name => "index_devices_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "username"
