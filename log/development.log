@@ -24,3 +24,1143 @@ Completed 200 OK in 46ms (Views: 9.4ms | ActiveRecord: 0.0ms)
   [1m[36m (0.2ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
   [1m[35m (3.2ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('0')
   [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20120612000321)
+  [1m[35m (13.0ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `username` varchar(255), `password_digest` varchar(255), `email` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120612000321')[0m
+  [1m[35m (0.1ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.1ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Migrating to CreateUsers (20120612000321)
+  [1m[36m (1.0ms)[0m  [1mDROP TABLE `users`[0m
+  [1m[35m (0.6ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20120612000321'
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20120612001905)
+  [1m[35m (14.2ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `username` varchar(255), `password_digest` varchar(255), `email` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120612001905')[0m
+  [1m[35m (0.1ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Mon Jun 11 20:23:52 -0400 2012
+Served asset /rails.png - 304 Not Modified (1ms)
+
+
+Started GET "/users" for 127.0.0.1 at Mon Jun 11 20:23:54 -0400 2012
+
+Gem::LoadError (bcrypt-ruby is not part of the bundle. Add it to Gemfile.):
+  app/models/user.rb:2
+  app/controllers/users_controller.rb:1
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.1ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Mon Jun 11 20:24:53 -0400 2012
+Served asset /rails.png - 304 Not Modified (1ms)
+
+
+Started GET "/users" for 127.0.0.1 at Mon Jun 11 20:24:56 -0400 2012
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` [0m
+Rendered users/index.html.erb within layouts/application (2.3ms)
+Compiled application.css  (3ms)  (pid 86676)
+Compiled scaffolds.css  (62ms)  (pid 86676)
+Compiled users.css  (2ms)  (pid 86676)
+Compiled application.js  (7ms)  (pid 86676)
+Compiled jquery.js  (6ms)  (pid 86676)
+Compiled jquery_ujs.js  (1ms)  (pid 86676)
+Compiled users.js  (113ms)  (pid 86676)
+Completed 200 OK in 303ms (Views: 301.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Jun 11 20:24:56 -0400 2012
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Jun 11 20:24:56 -0400 2012
+Served asset /scaffolds.css - 200 OK (4ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Mon Jun 11 20:24:56 -0400 2012
+Served asset /users.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Jun 11 20:24:56 -0400 2012
+Served asset /jquery.js - 200 OK (11ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Jun 11 20:24:56 -0400 2012
+Served asset /jquery_ujs.js - 200 OK (4ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Mon Jun 11 20:24:57 -0400 2012
+Served asset /users.js - 200 OK (70ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Jun 11 20:24:57 -0400 2012
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at Mon Jun 11 20:24:58 -0400 2012
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (9.5ms)
+Rendered users/new.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Jun 11 20:25:07 -0400 2012
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Create User", "authenticity_token"=>"CyFbekXpnLuK4LI8toBLHLEu50RwsJXKwO5oYh3kEaI=", "utf8"=>"✓", "user"=>{"password_confirmation"=>"[FILTERED]", "username"=>"Evan", "password"=>"[FILTERED]", "email"=>"evan.mcewen@gmail.com"}}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (1.2ms)[0m  [1mSELECT 1 FROM `users` WHERE `users`.`username` = BINARY 'Evan' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'evan.mcewen@gmail.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `users` (`created_at`, `email`, `password_digest`, `updated_at`, `username`) VALUES ('2012-06-12 00:25:07', 'evan.mcewen@gmail.com', '$2a$10$Ohy5Bx/pAGA0M0MN3hAxoOxPIe1yR3rvRPz1N9lAs7bEfrckgf3BG', '2012-06-12 00:25:07', 'Evan')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 121ms
+
+
+Started GET "/users/1" for 127.0.0.1 at Mon Jun 11 20:25:07 -0400 2012
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered users/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 60ms (Views: 13.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at Mon Jun 11 20:25:16 -0400 2012
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` 
+Rendered users/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 17ms (Views: 14.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at Mon Jun 11 20:25:18 -0400 2012
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (6.9ms)
+Rendered users/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Jun 11 20:25:32 -0400 2012
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Create User", "authenticity_token"=>"CyFbekXpnLuK4LI8toBLHLEu50RwsJXKwO5oYh3kEaI=", "utf8"=>"✓", "user"=>{"password_confirmation"=>"[FILTERED]", "username"=>"Test", "password"=>"[FILTERED]", "email"=>"evan.mcewen@gmail.com"}}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  SELECT 1 FROM `users` WHERE `users`.`username` = BINARY 'Test' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'evan.mcewen@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Rendered users/_form.html.erb (3.7ms)
+Rendered users/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 116ms (Views: 13.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Jun 11 20:25:32 -0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Jun 11 20:25:32 -0400 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Mon Jun 11 20:25:32 -0400 2012
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Mon Jun 11 20:25:32 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Jun 11 20:25:32 -0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Mon Jun 11 20:25:56 -0400 2012
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` [0m
+Rendered users/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 17ms (Views: 14.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Jun 11 20:25:56 -0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Jun 11 20:25:56 -0400 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Mon Jun 11 20:25:56 -0400 2012
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Jun 11 20:25:56 -0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Mon Jun 11 20:25:56 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Mon Jun 11 20:25:58 -0400 2012
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` 
+Rendered users/index.html.erb within layouts/application (48.1ms)
+Completed 200 OK in 60ms (Views: 58.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Jun 11 20:25:59 -0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Jun 11 20:25:59 -0400 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Mon Jun 11 20:25:59 -0400 2012
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Jun 11 20:25:59 -0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Jun 11 20:25:59 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Mon Jun 11 20:25:59 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Jun 11 20:25:59 -0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/users/1" for 127.0.0.1 at Mon Jun 11 20:26:01 -0400 2012
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"CyFbekXpnLuK4LI8toBLHLEu50RwsJXKwO5oYh3kEaI=", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM `users` WHERE `users`.`id` = 1[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/users
+Completed 302 Found in 11ms
+
+
+Started GET "/users" for 127.0.0.1 at Mon Jun 11 20:26:01 -0400 2012
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` [0m
+Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Jun 11 20:26:01 -0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Jun 11 20:26:01 -0400 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Mon Jun 11 20:26:01 -0400 2012
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Jun 11 20:26:01 -0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Jun 11 20:26:01 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Mon Jun 11 20:26:01 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Jun 11 20:26:01 -0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Mon Jun 11 20:46:21 -0400 2012
+Served asset /rails.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Mon Jun 11 20:46:26 -0400 2012
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Mon Jun 11 20:46:27 -0400 2012
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/home" for 127.0.0.1 at Mon Jun 11 20:46:39 -0400 2012
+
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20120612001905)
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Mon Jun 11 20:47:02 -0400 2012
+Served asset /rails.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Mon Jun 11 20:48:17 -0400 2012
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at Mon Jun 11 20:48:21 -0400 2012
+
+ActionController::RoutingError (No route matches [GET] "/home/index"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.9ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Mon Jun 11 20:48:39 -0400 2012
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jun 11 20:48:52 -0400 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.2ms)
+Compiled application.css  (33ms)  (pid 87090)
+Compiled bootstrap.css  (1ms)  (pid 87090)
+Compiled home.css  (1ms)  (pid 87090)
+Completed 500 Internal Server Error in 115ms
+
+ActionView::Template::Error (no such file to load -- less
+  (in /Users/Evan/Code/Ruby/android-smswebapp/app/assets/stylesheets/less/accordion.less)):
+    2: <html>
+    3: <head>
+    4:   <title>Smswebapp</title>
+    5:   <%= stylesheet_link_tag    "application" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___1552730065_2214621000'
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jun 11 20:50:05 -0400 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.0ms)
+Compiled application.js  (15ms)  (pid 87090)
+Compiled bootstrap-alert.js  (0ms)  (pid 87090)
+Compiled bootstrap-button.js  (0ms)  (pid 87090)
+Compiled bootstrap-carousel.js  (1ms)  (pid 87090)
+Compiled bootstrap-collapse.js  (0ms)  (pid 87090)
+Compiled bootstrap-dropdown.js  (0ms)  (pid 87090)
+Compiled bootstrap-modal.js  (1ms)  (pid 87090)
+Compiled bootstrap-popover.js  (0ms)  (pid 87090)
+Compiled bootstrap-scrollspy.js  (1ms)  (pid 87090)
+Compiled bootstrap-tab.js  (0ms)  (pid 87090)
+Compiled bootstrap-tooltip.js  (1ms)  (pid 87090)
+Compiled bootstrap-transition.js  (0ms)  (pid 87090)
+Compiled bootstrap-typeahead.js  (1ms)  (pid 87090)
+Compiled home.js  (74ms)  (pid 87090)
+Completed 200 OK in 403ms (Views: 403.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Mon Jun 11 20:50:06 -0400 2012
+Served asset /bootstrap.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Jun 11 20:50:06 -0400 2012
+Served asset /jquery.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at Mon Jun 11 20:50:06 -0400 2012
+Served asset /bootstrap-alert.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Jun 11 20:50:06 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at Mon Jun 11 20:50:06 -0400 2012
+Served asset /bootstrap-button.js - 200 OK (4ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at Mon Jun 11 20:50:06 -0400 2012
+Served asset /bootstrap-carousel.js - 200 OK (5ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at Mon Jun 11 20:50:06 -0400 2012
+Served asset /bootstrap-collapse.js - 200 OK (5ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at Mon Jun 11 20:50:06 -0400 2012
+Served asset /bootstrap-dropdown.js - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at Mon Jun 11 20:50:06 -0400 2012
+Served asset /bootstrap-modal.js - 200 OK (5ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at Mon Jun 11 20:50:06 -0400 2012
+Served asset /bootstrap-popover.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at Mon Jun 11 20:50:06 -0400 2012
+Served asset /bootstrap-scrollspy.js - 200 OK (8ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at Mon Jun 11 20:50:06 -0400 2012
+Served asset /bootstrap-tab.js - 200 OK (4ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at Mon Jun 11 20:50:06 -0400 2012
+Served asset /bootstrap-tooltip.js - 200 OK (4ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at Mon Jun 11 20:50:06 -0400 2012
+Served asset /bootstrap-transition.js - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at Mon Jun 11 20:50:06 -0400 2012
+Served asset /bootstrap-typeahead.js - 200 OK (4ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Mon Jun 11 20:50:06 -0400 2012
+Served asset /home.js - 200 OK (3ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Mon Jun 11 20:50:06 -0400 2012
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Jun 11 20:50:06 -0400 2012
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jun 11 20:51:00 -0400 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 29ms (Views: 28.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Mon Jun 11 20:51:00 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Jun 11 20:51:00 -0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Jun 11 20:51:00 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at Mon Jun 11 20:51:00 -0400 2012
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at Mon Jun 11 20:51:00 -0400 2012
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at Mon Jun 11 20:51:00 -0400 2012
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at Mon Jun 11 20:51:00 -0400 2012
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at Mon Jun 11 20:51:00 -0400 2012
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at Mon Jun 11 20:51:00 -0400 2012
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at Mon Jun 11 20:51:00 -0400 2012
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at Mon Jun 11 20:51:00 -0400 2012
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at Mon Jun 11 20:51:00 -0400 2012
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at Mon Jun 11 20:51:00 -0400 2012
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at Mon Jun 11 20:51:00 -0400 2012
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at Mon Jun 11 20:51:00 -0400 2012
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Mon Jun 11 20:51:00 -0400 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Mon Jun 11 20:51:00 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Jun 11 20:51:00 -0400 2012
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jun 11 20:51:35 -0400 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 33ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Mon Jun 11 20:51:35 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Jun 11 20:51:35 -0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Jun 11 20:51:35 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at Mon Jun 11 20:51:35 -0400 2012
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at Mon Jun 11 20:51:35 -0400 2012
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at Mon Jun 11 20:51:35 -0400 2012
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at Mon Jun 11 20:51:36 -0400 2012
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at Mon Jun 11 20:51:36 -0400 2012
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at Mon Jun 11 20:51:36 -0400 2012
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at Mon Jun 11 20:51:36 -0400 2012
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at Mon Jun 11 20:51:36 -0400 2012
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at Mon Jun 11 20:51:36 -0400 2012
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at Mon Jun 11 20:51:36 -0400 2012
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at Mon Jun 11 20:51:36 -0400 2012
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at Mon Jun 11 20:51:36 -0400 2012
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Mon Jun 11 20:51:36 -0400 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Mon Jun 11 20:51:36 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Jun 11 20:51:36 -0400 2012
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jun 11 20:52:40 -0400 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 30ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Mon Jun 11 20:52:40 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Jun 11 20:52:40 -0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at Mon Jun 11 20:52:40 -0400 2012
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at Mon Jun 11 20:52:40 -0400 2012
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Jun 11 20:52:40 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at Mon Jun 11 20:52:40 -0400 2012
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at Mon Jun 11 20:52:40 -0400 2012
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at Mon Jun 11 20:52:40 -0400 2012
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at Mon Jun 11 20:52:40 -0400 2012
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at Mon Jun 11 20:52:40 -0400 2012
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at Mon Jun 11 20:52:40 -0400 2012
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at Mon Jun 11 20:52:40 -0400 2012
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at Mon Jun 11 20:52:40 -0400 2012
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at Mon Jun 11 20:52:40 -0400 2012
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at Mon Jun 11 20:52:40 -0400 2012
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Mon Jun 11 20:52:40 -0400 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Mon Jun 11 20:52:40 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Jun 11 20:52:40 -0400 2012
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jun 11 20:57:07 -0400 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 47ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Mon Jun 11 20:57:07 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Mon Jun 11 20:57:07 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (6ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (4.4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Jun 11 20:57:07 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Jun 11 20:57:07 -0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at Mon Jun 11 20:57:07 -0400 2012
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at Mon Jun 11 20:57:07 -0400 2012
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at Mon Jun 11 20:57:07 -0400 2012
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at Mon Jun 11 20:57:07 -0400 2012
+Served asset /bootstrap-collapse.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at Mon Jun 11 20:57:07 -0400 2012
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at Mon Jun 11 20:57:07 -0400 2012
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at Mon Jun 11 20:57:07 -0400 2012
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at Mon Jun 11 20:57:07 -0400 2012
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at Mon Jun 11 20:57:07 -0400 2012
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at Mon Jun 11 20:57:07 -0400 2012
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at Mon Jun 11 20:57:07 -0400 2012
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at Mon Jun 11 20:57:07 -0400 2012
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Mon Jun 11 20:57:07 -0400 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Mon Jun 11 20:57:07 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Jun 11 20:57:07 -0400 2012
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/img/glyphicons-halflings.png" for 127.0.0.1 at Mon Jun 11 20:57:07 -0400 2012
+
+ActionController::RoutingError (No route matches [GET] "/img/glyphicons-halflings.png"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jun 11 20:58:07 -0400 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.0ms)
+Compiled bootstrap.css  (1ms)  (pid 87090)
+Completed 200 OK in 43ms (Views: 42.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Mon Jun 11 20:58:07 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Mon Jun 11 20:58:07 -0400 2012
+Served asset /bootstrap.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Jun 11 20:58:07 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Jun 11 20:58:07 -0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at Mon Jun 11 20:58:07 -0400 2012
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at Mon Jun 11 20:58:07 -0400 2012
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at Mon Jun 11 20:58:07 -0400 2012
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at Mon Jun 11 20:58:07 -0400 2012
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at Mon Jun 11 20:58:07 -0400 2012
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at Mon Jun 11 20:58:07 -0400 2012
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at Mon Jun 11 20:58:07 -0400 2012
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at Mon Jun 11 20:58:07 -0400 2012
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at Mon Jun 11 20:58:07 -0400 2012
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at Mon Jun 11 20:58:07 -0400 2012
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at Mon Jun 11 20:58:07 -0400 2012
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at Mon Jun 11 20:58:07 -0400 2012
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Mon Jun 11 20:58:07 -0400 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Mon Jun 11 20:58:07 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Jun 11 20:58:07 -0400 2012
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/assets/images/glyphicons-halflings.png" for 127.0.0.1 at Mon Jun 11 20:58:07 -0400 2012
+Served asset /assets/images/glyphicons-halflings.png - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/assets/images/glyphicons-halflings.png"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/images/" for 127.0.0.1 at Mon Jun 11 20:58:14 -0400 2012
+Served asset /images - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/images"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at Mon Jun 11 20:58:19 -0400 2012
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Mon Jun 11 20:58:25 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jun 11 20:58:42 -0400 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.0ms)
+Compiled bootstrap.css  (1ms)  (pid 87090)
+Completed 200 OK in 43ms (Views: 42.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Mon Jun 11 20:58:42 -0400 2012
+Served asset /bootstrap.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Jun 11 20:58:42 -0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Jun 11 20:58:42 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at Mon Jun 11 20:58:42 -0400 2012
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at Mon Jun 11 20:58:42 -0400 2012
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at Mon Jun 11 20:58:42 -0400 2012
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at Mon Jun 11 20:58:42 -0400 2012
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at Mon Jun 11 20:58:42 -0400 2012
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at Mon Jun 11 20:58:42 -0400 2012
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at Mon Jun 11 20:58:42 -0400 2012
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at Mon Jun 11 20:58:42 -0400 2012
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at Mon Jun 11 20:58:42 -0400 2012
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at Mon Jun 11 20:58:42 -0400 2012
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at Mon Jun 11 20:58:42 -0400 2012
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at Mon Jun 11 20:58:42 -0400 2012
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Mon Jun 11 20:58:42 -0400 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Mon Jun 11 20:58:42 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Jun 11 20:58:42 -0400 2012
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/assets/glyphicons-halflings.png" for 127.0.0.1 at Mon Jun 11 20:58:42 -0400 2012
+Served asset /assets/glyphicons-halflings.png - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/assets/glyphicons-halflings.png"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Mon Jun 11 20:58:57 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jun 11 21:01:36 -0400 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 100ms (Views: 99.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Mon Jun 11 21:01:36 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (23ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Mon Jun 11 21:01:36 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Jun 11 21:01:36 -0400 2012
+Served asset /jquery.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Jun 11 21:01:36 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at Mon Jun 11 21:01:36 -0400 2012
+Served asset /bootstrap-button.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at Mon Jun 11 21:01:36 -0400 2012
+Served asset /bootstrap-alert.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at Mon Jun 11 21:01:36 -0400 2012
+Served asset /bootstrap-carousel.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at Mon Jun 11 21:01:36 -0400 2012
+Served asset /bootstrap-collapse.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at Mon Jun 11 21:01:36 -0400 2012
+Served asset /bootstrap-dropdown.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at Mon Jun 11 21:01:36 -0400 2012
+Served asset /bootstrap-modal.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at Mon Jun 11 21:01:36 -0400 2012
+Served asset /bootstrap-popover.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at Mon Jun 11 21:01:36 -0400 2012
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at Mon Jun 11 21:01:36 -0400 2012
+Served asset /bootstrap-tab.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at Mon Jun 11 21:01:36 -0400 2012
+Served asset /bootstrap-tooltip.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at Mon Jun 11 21:01:36 -0400 2012
+Served asset /bootstrap-transition.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at Mon Jun 11 21:01:36 -0400 2012
+Served asset /bootstrap-typeahead.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Mon Jun 11 21:01:36 -0400 2012
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Mon Jun 11 21:01:36 -0400 2012
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Jun 11 21:01:36 -0400 2012
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/assets/glyphicons-halflings.png" for 127.0.0.1 at Mon Jun 11 21:01:36 -0400 2012
+Served asset /assets/glyphicons-halflings.png - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/assets/glyphicons-halflings.png"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jun 11 21:03:03 -0400 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Compiled bootstrap.css  (2ms)  (pid 87316)
+Completed 200 OK in 109ms (Views: 108.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Mon Jun 11 21:03:03 -0400 2012
+Served asset /bootstrap.css - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Mon Jun 11 21:03:03 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (6ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Jun 11 21:03:03 -0400 2012
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Jun 11 21:03:03 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at Mon Jun 11 21:03:03 -0400 2012
+Served asset /bootstrap-alert.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at Mon Jun 11 21:03:03 -0400 2012
+Served asset /bootstrap-button.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at Mon Jun 11 21:03:03 -0400 2012
+Served asset /bootstrap-carousel.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at Mon Jun 11 21:03:03 -0400 2012
+Served asset /bootstrap-collapse.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at Mon Jun 11 21:03:03 -0400 2012
+Served asset /bootstrap-dropdown.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at Mon Jun 11 21:03:03 -0400 2012
+Served asset /bootstrap-modal.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at Mon Jun 11 21:03:03 -0400 2012
+Served asset /bootstrap-popover.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at Mon Jun 11 21:03:03 -0400 2012
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at Mon Jun 11 21:03:03 -0400 2012
+Served asset /bootstrap-tab.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at Mon Jun 11 21:03:03 -0400 2012
+Served asset /bootstrap-tooltip.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at Mon Jun 11 21:03:03 -0400 2012
+Served asset /bootstrap-transition.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at Mon Jun 11 21:03:03 -0400 2012
+Served asset /bootstrap-typeahead.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Mon Jun 11 21:03:03 -0400 2012
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Mon Jun 11 21:03:03 -0400 2012
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Jun 11 21:03:03 -0400 2012
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at Mon Jun 11 21:03:04 -0400 2012
+Served asset /glyphicons-halflings.png - 200 OK (3ms)
