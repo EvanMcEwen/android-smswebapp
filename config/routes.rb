@@ -2,6 +2,7 @@ Smswebapp::Application.routes.draw do
   
   match "login" => "auth#login"
   match "logout" => "auth#logout"
+  match "signup" => "users#new"
 
   resources :users
 

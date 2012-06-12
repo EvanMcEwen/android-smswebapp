@@ -13,5 +13,4 @@ class AuthController < ApplicationController
 
   	redirect_to '/login'
   end
-
 end
