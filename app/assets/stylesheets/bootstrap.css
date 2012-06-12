@@ -138,6 +138,7 @@ body {
   line-height: 18px;
   color: #333333;
   background-color: #ffffff;
+  background-image: url("linen.png");
 }
 a {
   color: #0088cc;
@@ -1001,6 +1002,10 @@ select:focus:required:invalid:focus {
 }
 .form-actions:after {
   clear: both;
+}
+.form-actions-login {
+  background-color: transparent;
+  border-top: none;
 }
 .uneditable-input {
   overflow: hidden;
@@ -4182,6 +4187,9 @@ a.badge:hover {
   font-weight: 200;
   line-height: 27px;
   color: inherit;
+}
+.hero-unit-login {
+  background-color: transparent;
 }
 .pull-right {
   float: right;

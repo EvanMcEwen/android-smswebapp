@@ -1,5 +1,8 @@
 Smswebapp::Application.routes.draw do
   
+  match "login" => "auth#login"
+  match "logout" => "auth#logout"
+
   resources :users
 
   root :to => 'home#index'

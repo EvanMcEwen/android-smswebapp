@@ -1164,3 +1164,3311 @@ Served asset /application.js - 304 Not Modified (1ms)
 
 Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at Mon Jun 11 21:03:04 -0400 2012
 Served asset /glyphicons-halflings.png - 200 OK (3ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jun 11 21:44:52 -0400 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 119ms (Views: 118.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Mon Jun 11 21:44:52 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Mon Jun 11 21:44:52 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Jun 11 21:44:52 -0400 2012
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Jun 11 21:44:52 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at Mon Jun 11 21:44:52 -0400 2012
+Served asset /bootstrap-alert.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at Mon Jun 11 21:44:52 -0400 2012
+Served asset /bootstrap-button.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at Mon Jun 11 21:44:52 -0400 2012
+Served asset /bootstrap-carousel.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at Mon Jun 11 21:44:52 -0400 2012
+Served asset /bootstrap-collapse.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at Mon Jun 11 21:44:52 -0400 2012
+Served asset /bootstrap-dropdown.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at Mon Jun 11 21:44:52 -0400 2012
+Served asset /bootstrap-modal.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at Mon Jun 11 21:44:52 -0400 2012
+Served asset /bootstrap-popover.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at Mon Jun 11 21:44:52 -0400 2012
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (58ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at Mon Jun 11 21:44:52 -0400 2012
+Served asset /bootstrap-tab.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at Mon Jun 11 21:44:52 -0400 2012
+Served asset /bootstrap-tooltip.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at Mon Jun 11 21:44:52 -0400 2012
+Served asset /bootstrap-transition.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at Mon Jun 11 21:44:52 -0400 2012
+Served asset /bootstrap-typeahead.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Mon Jun 11 21:44:52 -0400 2012
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Mon Jun 11 21:44:52 -0400 2012
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Jun 11 21:44:52 -0400 2012
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at Mon Jun 11 21:44:52 -0400 2012
+Served asset /glyphicons-halflings.png - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Jun 12 10:44:33 -0400 2012
+  Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 10:44:33 -0400 2012
+
+ActionController::RoutingError (No route matches [GET] "/login"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Jun 12 10:45:37 -0400 2012
+  Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 0ms
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 10:45:37 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 15:45:37 UTC
+Rendered auth/login.html.erb within layouts/application (0.2ms)
+Compiled application.js  (56ms)  (pid 89410)
+Compiled auth.js  (104ms)  (pid 89410)
+Completed 200 OK in 304ms (Views: 301.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 10:45:38 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Tue Jun 12 10:45:38 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (6ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:38 -0400 2012
+Served asset /jquery.js - 304 Not Modified (68ms)
+
+
+Started GET "/assets/auth.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:38 -0400 2012
+Served asset /auth.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:38 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:38 -0400 2012
+Served asset /bootstrap-alert.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:38 -0400 2012
+Served asset /bootstrap-button.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:38 -0400 2012
+Served asset /bootstrap-carousel.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:38 -0400 2012
+Served asset /bootstrap-collapse.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:38 -0400 2012
+Served asset /bootstrap-dropdown.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:38 -0400 2012
+Served asset /bootstrap-modal.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:38 -0400 2012
+Served asset /bootstrap-popover.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:38 -0400 2012
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:38 -0400 2012
+Served asset /bootstrap-tab.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:38 -0400 2012
+Served asset /bootstrap-tooltip.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:38 -0400 2012
+Served asset /bootstrap-transition.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:38 -0400 2012
+Served asset /bootstrap-typeahead.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:38 -0400 2012
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:38 -0400 2012
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:38 -0400 2012
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at Tue Jun 12 10:45:38 -0400 2012
+Served asset /glyphicons-halflings.png - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Jun 12 10:45:43 -0400 2012
+  Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 10:45:43 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 15:45:43 UTC
+Rendered auth/login.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 30ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Tue Jun 12 10:45:43 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 10:45:43 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:43 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:43 -0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:43 -0400 2012
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:43 -0400 2012
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:43 -0400 2012
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:43 -0400 2012
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:43 -0400 2012
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:43 -0400 2012
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:43 -0400 2012
+Served asset /bootstrap-popover.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:43 -0400 2012
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:43 -0400 2012
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:43 -0400 2012
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:43 -0400 2012
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:43 -0400 2012
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:43 -0400 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:43 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at Tue Jun 12 10:45:43 -0400 2012
+Served asset /glyphicons-halflings.png - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Jun 12 10:45:50 -0400 2012
+  Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 0ms
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 10:45:51 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 15:45:51 UTC
+Rendered auth/login.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 10:45:51 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Tue Jun 12 10:45:51 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:51 -0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:51 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:51 -0400 2012
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:51 -0400 2012
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:51 -0400 2012
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:51 -0400 2012
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:51 -0400 2012
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:51 -0400 2012
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:51 -0400 2012
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:51 -0400 2012
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:51 -0400 2012
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:51 -0400 2012
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:51 -0400 2012
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:51 -0400 2012
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:51 -0400 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Tue Jun 12 10:45:51 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at Tue Jun 12 10:45:51 -0400 2012
+Served asset /glyphicons-halflings.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Jun 12 10:47:44 -0400 2012
+  Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 10:47:44 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 15:47:44 UTC
+Rendered auth/login.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 90ms (Views: 89.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 10:47:45 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Tue Jun 12 10:47:45 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Tue Jun 12 10:47:45 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Tue Jun 12 10:47:45 -0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/auth.js?body=1" for 127.0.0.1 at Tue Jun 12 10:47:45 -0400 2012
+Served asset /auth.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at Tue Jun 12 10:47:45 -0400 2012
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at Tue Jun 12 10:47:45 -0400 2012
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at Tue Jun 12 10:47:45 -0400 2012
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at Tue Jun 12 10:47:45 -0400 2012
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at Tue Jun 12 10:47:45 -0400 2012
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at Tue Jun 12 10:47:45 -0400 2012
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at Tue Jun 12 10:47:45 -0400 2012
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at Tue Jun 12 10:47:45 -0400 2012
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at Tue Jun 12 10:47:45 -0400 2012
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at Tue Jun 12 10:47:45 -0400 2012
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at Tue Jun 12 10:47:45 -0400 2012
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at Tue Jun 12 10:47:45 -0400 2012
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Tue Jun 12 10:47:45 -0400 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Tue Jun 12 10:47:45 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Tue Jun 12 10:47:45 -0400 2012
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 10:47:58 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 15:47:58 UTC
+Rendered auth/login.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 31ms (Views: 30.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 10:47:58 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Tue Jun 12 10:47:58 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (44.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Tue Jun 12 10:47:58 -0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/auth.js?body=1" for 127.0.0.1 at Tue Jun 12 10:47:58 -0400 2012
+Served asset /auth.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Tue Jun 12 10:47:58 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at Tue Jun 12 10:47:58 -0400 2012
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at Tue Jun 12 10:47:58 -0400 2012
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at Tue Jun 12 10:47:58 -0400 2012
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at Tue Jun 12 10:47:58 -0400 2012
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at Tue Jun 12 10:47:58 -0400 2012
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at Tue Jun 12 10:47:58 -0400 2012
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at Tue Jun 12 10:47:58 -0400 2012
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at Tue Jun 12 10:47:58 -0400 2012
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at Tue Jun 12 10:47:58 -0400 2012
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at Tue Jun 12 10:47:58 -0400 2012
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at Tue Jun 12 10:47:58 -0400 2012
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at Tue Jun 12 10:47:58 -0400 2012
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Tue Jun 12 10:47:58 -0400 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Tue Jun 12 10:47:58 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Tue Jun 12 10:47:58 -0400 2012
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 10:55:18 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 15:55:18 UTC
+Rendered auth/login.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 30ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Tue Jun 12 10:55:18 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 10:55:18 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Tue Jun 12 10:55:18 -0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at Tue Jun 12 10:55:18 -0400 2012
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Tue Jun 12 10:55:18 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/auth.js?body=1" for 127.0.0.1 at Tue Jun 12 10:55:18 -0400 2012
+Served asset /auth.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at Tue Jun 12 10:55:18 -0400 2012
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at Tue Jun 12 10:55:18 -0400 2012
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at Tue Jun 12 10:55:18 -0400 2012
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at Tue Jun 12 10:55:18 -0400 2012
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at Tue Jun 12 10:55:18 -0400 2012
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at Tue Jun 12 10:55:18 -0400 2012
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at Tue Jun 12 10:55:18 -0400 2012
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at Tue Jun 12 10:55:18 -0400 2012
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at Tue Jun 12 10:55:18 -0400 2012
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at Tue Jun 12 10:55:18 -0400 2012
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at Tue Jun 12 10:55:18 -0400 2012
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Tue Jun 12 10:55:18 -0400 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Tue Jun 12 10:55:18 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Tue Jun 12 10:55:18 -0400 2012
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at Tue Jun 12 10:55:18 -0400 2012
+Served asset /glyphicons-halflings.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 10:55:51 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 15:55:51 UTC
+Rendered auth/login.html.erb within layouts/auth (0.0ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 10:56:09 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 15:56:09 UTC
+Rendered auth/login.html.erb within layouts/auth (0.0ms)
+Completed 500 Internal Server Error in 68ms
+
+ActionView::Template::Error (undefined local variable or method `yeild' for #<#<Class:0x10e3d3038>:0x10e3ceec0>):
+    1: <h1>test</h1>
+    2: <%= yeild %>
+  app/views/layouts/auth.html.erb:2:in `_app_views_layouts_auth_html_erb___636465343_2266930040'
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (58.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 10:56:16 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 15:56:16 UTC
+Rendered auth/login.html.erb within layouts/auth (0.0ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:00:40 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:00:40 UTC
+Rendered auth/login.html.erb within layouts/auth (0.2ms)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Tue Jun 12 11:00:40 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:00:40 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/linen.png" for 127.0.0.1 at Tue Jun 12 11:00:40 -0400 2012
+
+ActionController::RoutingError (No route matches [GET] "/linen.png"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:00:49 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:00:49 UTC
+Rendered auth/login.html.erb within layouts/auth (0.0ms)
+Completed 200 OK in 21ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Tue Jun 12 11:00:49 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (6ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:00:49 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/linen.png" for 127.0.0.1 at Tue Jun 12 11:00:49 -0400 2012
+
+ActionController::RoutingError (No route matches [GET] "/linen.png"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:00:49 -0400 2012
+Served asset /glyphicons-halflings-white.png - 200 OK (3ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:01:50 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:01:50 UTC
+Rendered auth/login.html.erb within layouts/auth (2.1ms)
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Tue Jun 12 11:01:50 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:01:50 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/linen.png" for 127.0.0.1 at Tue Jun 12 11:01:50 -0400 2012
+
+ActionController::RoutingError (No route matches [GET] "/linen.png"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:01:50 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (2ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:03:51 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:03:51 UTC
+Rendered auth/login.html.erb within layouts/auth (0.0ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:03:51 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Tue Jun 12 11:03:51 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/linen.png" for 127.0.0.1 at Tue Jun 12 11:03:51 -0400 2012
+
+ActionController::RoutingError (No route matches [GET] "/linen.png"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:03:51 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:03:52 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:03:52 UTC
+Rendered auth/login.html.erb within layouts/auth (0.0ms)
+Completed 200 OK in 61ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Tue Jun 12 11:03:53 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:03:53 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/linen.png" for 127.0.0.1 at Tue Jun 12 11:03:53 -0400 2012
+
+ActionController::RoutingError (No route matches [GET] "/linen.png"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:03:53 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:04:37 -0400 2012
+Served asset /linen.png - 200 OK (5ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:05:14 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:05:14 UTC
+Rendered auth/login.html.erb within layouts/auth (0.0ms)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:05:14 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:05:14 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:08:48 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:08:48 UTC
+Rendered auth/login.html.erb within layouts/auth (1.0ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Tue Jun 12 11:08:48 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:08:49 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:08:49 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:08:50 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:08:50 UTC
+Rendered auth/login.html.erb within layouts/auth (0.5ms)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:08:50 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Tue Jun 12 11:08:50 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:08:50 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:09:30 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:09:30 UTC
+Rendered auth/login.html.erb within layouts/auth (0.8ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Tue Jun 12 11:09:30 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (6ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:09:30 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:09:30 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:10:21 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:10:21 UTC
+Rendered auth/login.html.erb within layouts/auth (0.9ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:10:21 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Tue Jun 12 11:10:21 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:10:21 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:13:45 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:13:45 UTC
+Rendered auth/login.html.erb within layouts/auth (1.0ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Tue Jun 12 11:13:45 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:13:45 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:13:45 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:14:50 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:14:50 UTC
+Rendered auth/login.html.erb within layouts/auth (1.0ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Tue Jun 12 11:14:50 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:14:50 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:14:50 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:14:51 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:14:51 UTC
+Rendered auth/login.html.erb within layouts/auth (0.5ms)
+Completed 200 OK in 61ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Tue Jun 12 11:14:51 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:14:51 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:14:51 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:15:17 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:15:17 UTC
+Rendered auth/login.html.erb within layouts/auth (2.4ms)
+Completed 200 OK in 32ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:15:17 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Tue Jun 12 11:15:18 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:15:18 -0400 2012
+Served asset /linen.png - 304 Not Modified (1ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:16:45 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:16:45 UTC
+Rendered auth/login.html.erb within layouts/auth (1.1ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Tue Jun 12 11:16:45 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:16:45 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:16:45 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:16:55 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:16:55 UTC
+Rendered auth/login.html.erb within layouts/auth (1.2ms)
+Completed 200 OK in 24ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Tue Jun 12 11:16:56 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:16:56 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:16:56 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:17:24 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:17:24 UTC
+Rendered auth/login.html.erb within layouts/auth (0.9ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Tue Jun 12 11:17:24 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:17:24 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:17:24 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:17:30 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:17:30 UTC
+Rendered auth/login.html.erb within layouts/auth (1.0ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Tue Jun 12 11:17:30 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:17:30 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:17:30 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:19:39 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:19:39 UTC
+Rendered auth/login.html.erb within layouts/auth (1.0ms)
+Completed 200 OK in 20ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Tue Jun 12 11:19:39 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:19:40 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:19:40 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:19:40 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (1ms)
+
+
+Started POST "/login" for 127.0.0.1 at Tue Jun 12 11:19:53 -0400 2012
+  Processing by AuthController#login as HTML
+  Parameters: {"button"=>"", "username"=>"", "authenticity_token"=>"HoNFKozvuEzOpkG2JiFP5GFHrd6EZ/xx5A6Pa4fdBbs=", "utf8"=>"✓", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`username` = '' LIMIT 1[0m
+[Session Expires At] 2012-06-12 16:19:53 UTC
+Rendered auth/login.html.erb within layouts/auth (1.0ms)
+Completed 200 OK in 63ms (Views: 20.7ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Tue Jun 12 11:19:53 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:19:53 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:19:53 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:19:53 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started POST "/login" for 127.0.0.1 at Tue Jun 12 11:20:00 -0400 2012
+  Processing by AuthController#login as HTML
+  Parameters: {"button"=>"", "username"=>"evan", "authenticity_token"=>"HoNFKozvuEzOpkG2JiFP5GFHrd6EZ/xx5A6Pa4fdBbs=", "utf8"=>"✓", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`username` = 'evan' LIMIT 1
+[Session Expires At] 2012-06-12 16:20:00 UTC
+Rendered auth/login.html.erb within layouts/auth (0.6ms)
+Completed 200 OK in 35ms (Views: 21.5ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Tue Jun 12 11:20:00 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:20:00 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:20:00 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:20:00 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Jun 12 11:21:34 -0400 2012
+  Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 0ms
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:21:34 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:21:34 UTC
+Rendered auth/login.html.erb within layouts/auth (0.9ms)
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Tue Jun 12 11:21:35 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:21:35 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:21:35 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:21:35 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:22:27 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:22:27 UTC
+Rendered auth/login.html.erb within layouts/auth (0.9ms)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Tue Jun 12 11:22:27 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:22:27 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:22:27 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:22:27 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:22:39 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:22:39 UTC
+Rendered auth/login.html.erb within layouts/auth (1.4ms)
+Completed 200 OK in 22ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Tue Jun 12 11:22:39 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:22:39 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:22:39 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:22:39 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:22:58 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:22:58 UTC
+Rendered auth/login.html.erb within layouts/auth (1.1ms)
+Completed 200 OK in 62ms (Views: 61.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Tue Jun 12 11:22:58 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (6ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:22:58 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:22:58 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:22:58 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Jun 12 11:24:38 -0400 2012
+  Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 0ms
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:24:38 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:24:38 UTC
+Rendered auth/login.html.erb within layouts/auth (1.0ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Tue Jun 12 11:24:38 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:24:38 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:24:38 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:24:38 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:25:49 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:25:49 UTC
+Rendered auth/login.html.erb within layouts/auth (1.0ms)
+Completed 200 OK in 26ms (Views: 25.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at Tue Jun 12 11:25:49 -0400 2012
+Served asset /bootstrap-responsive.css - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-responsive.css"):
+  
+
+Rendered /Users/Evan/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:25:49 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:25:49 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:25:49 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:30:44 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:30:44 UTC
+Rendered auth/login.html.erb within layouts/auth (1.1ms)
+Compiled responsive.css  (0ms)  (pid 89683)
+Completed 200 OK in 28ms (Views: 27.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:30:44 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 11:30:44 -0400 2012
+Served asset /responsive.css - 200 OK (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:30:44 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:30:44 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:31:04 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:31:04 UTC
+Rendered auth/login.html.erb within layouts/auth (0.6ms)
+Compiled bootstrap.css  (1ms)  (pid 89683)
+Completed 200 OK in 29ms (Views: 28.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:31:05 -0400 2012
+Served asset /bootstrap.css - 200 OK (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 11:31:05 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:31:05 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:31:05 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:31:05 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:31:05 UTC
+Rendered auth/login.html.erb within layouts/auth (0.6ms)
+Completed 200 OK in 18ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:31:05 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 11:31:05 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:31:06 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:31:06 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:31:34 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:31:35 UTC
+Rendered auth/login.html.erb within layouts/auth (0.6ms)
+Compiled bootstrap.css  (1ms)  (pid 89683)
+Completed 200 OK in 29ms (Views: 28.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:31:35 -0400 2012
+Served asset /bootstrap.css - 200 OK (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 11:31:35 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:31:35 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:31:35 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:32:00 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:32:00 UTC
+Rendered auth/login.html.erb within layouts/auth (0.8ms)
+Compiled bootstrap.css  (1ms)  (pid 89683)
+Completed 200 OK in 71ms (Views: 70.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:32:00 -0400 2012
+Served asset /bootstrap.css - 200 OK (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 11:32:00 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:32:00 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:32:00 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:32:58 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:32:58 UTC
+Rendered auth/login.html.erb within layouts/auth (1.0ms)
+Compiled bootstrap.css  (1ms)  (pid 89683)
+Completed 200 OK in 29ms (Views: 28.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:32:58 -0400 2012
+Served asset /bootstrap.css - 200 OK (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 11:32:58 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:32:58 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:32:58 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:32:59 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:32:59 UTC
+Rendered auth/login.html.erb within layouts/auth (39.9ms)
+Completed 200 OK in 57ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:32:59 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 11:32:59 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:32:59 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:32:59 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:34:12 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:34:12 UTC
+Rendered auth/login.html.erb within layouts/auth (0.8ms)
+Compiled bootstrap.css  (1ms)  (pid 89683)
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:34:12 -0400 2012
+Served asset /bootstrap.css - 200 OK (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 11:34:12 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:34:12 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:34:12 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:34:23 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:34:23 UTC
+Rendered auth/login.html.erb within layouts/auth (1.4ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:34:23 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 11:34:23 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:34:23 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:34:23 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:34:24 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:34:24 UTC
+Rendered auth/login.html.erb within layouts/auth (0.6ms)
+Completed 200 OK in 18ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:34:24 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 11:34:24 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:34:24 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:34:24 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:44:01 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:44:01 UTC
+Rendered auth/login.html.erb within layouts/auth (1.4ms)
+Compiled bootstrap.css  (1ms)  (pid 89683)
+Completed 200 OK in 29ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:44:01 -0400 2012
+Served asset /bootstrap.css - 200 OK (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 11:44:01 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:44:01 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:44:01 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:44:15 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:44:16 UTC
+Rendered auth/login.html.erb within layouts/auth (1.0ms)
+Completed 200 OK in 21ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:44:16 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 11:44:16 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:44:16 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:44:16 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:44:23 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:44:23 UTC
+Rendered auth/login.html.erb within layouts/auth (1.0ms)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:44:23 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 11:44:23 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:44:23 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:44:23 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:44:24 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:44:24 UTC
+Rendered auth/login.html.erb within layouts/auth (0.7ms)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:44:24 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 11:44:24 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:44:24 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:44:24 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:44:25 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:44:25 UTC
+Rendered auth/login.html.erb within layouts/auth (0.6ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:44:25 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 11:44:25 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:44:25 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:44:25 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:46:05 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:46:05 UTC
+Rendered auth/login.html.erb within layouts/auth (1.0ms)
+Compiled bootstrap.css  (1ms)  (pid 89683)
+Completed 200 OK in 28ms (Views: 27.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 11:46:05 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:46:05 -0400 2012
+Served asset /bootstrap.css - 200 OK (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:46:05 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:46:05 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:46:43 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:46:43 UTC
+Rendered auth/login.html.erb within layouts/auth (1.0ms)
+Compiled bootstrap.css  (1ms)  (pid 89683)
+Completed 200 OK in 29ms (Views: 28.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:46:43 -0400 2012
+Served asset /bootstrap.css - 200 OK (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 11:46:43 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:46:43 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:46:43 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:46:44 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:46:44 UTC
+Rendered auth/login.html.erb within layouts/auth (0.6ms)
+Completed 200 OK in 54ms (Views: 53.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:46:44 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 11:46:44 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:46:44 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:46:44 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:46:46 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:46:46 UTC
+Rendered auth/login.html.erb within layouts/auth (0.6ms)
+Compiled bootstrap.css  (1ms)  (pid 89683)
+Completed 200 OK in 31ms (Views: 30.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:46:46 -0400 2012
+Served asset /bootstrap.css - 200 OK (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 11:46:46 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:46:46 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:46:46 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:48:02 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:48:02 UTC
+Rendered auth/login.html.erb within layouts/auth (0.6ms)
+Compiled bootstrap.css  (1ms)  (pid 89683)
+Completed 200 OK in 68ms (Views: 67.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:48:02 -0400 2012
+Served asset /bootstrap.css - 200 OK (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 11:48:02 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:48:02 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:48:02 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:52:10 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:52:10 UTC
+Rendered auth/login.html.erb within layouts/auth (1.0ms)
+Compiled bootstrap.css  (1ms)  (pid 89683)
+Completed 200 OK in 29ms (Views: 28.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:52:10 -0400 2012
+Served asset /bootstrap.css - 200 OK (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 11:52:10 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:52:10 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:52:10 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:52:11 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:52:11 UTC
+Rendered auth/login.html.erb within layouts/auth (0.7ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:52:11 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 11:52:11 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:52:11 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:52:11 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:52:12 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:52:12 UTC
+Rendered auth/login.html.erb within layouts/auth (0.6ms)
+Completed 200 OK in 18ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:52:12 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 11:52:12 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:52:12 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:52:12 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:52:37 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:52:37 UTC
+Rendered auth/login.html.erb within layouts/auth (0.6ms)
+Compiled bootstrap.css  (1ms)  (pid 89683)
+Completed 200 OK in 29ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:52:37 -0400 2012
+Served asset /bootstrap.css - 200 OK (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 11:52:37 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:52:37 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:52:37 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:53:08 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:53:09 UTC
+Rendered auth/login.html.erb within layouts/auth (0.6ms)
+Compiled bootstrap.css  (1ms)  (pid 89683)
+Completed 200 OK in 68ms (Views: 67.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:53:09 -0400 2012
+Served asset /bootstrap.css - 200 OK (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 11:53:09 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:53:09 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:53:09 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:53:09 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:53:09 UTC
+Rendered auth/login.html.erb within layouts/auth (0.6ms)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:53:09 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 11:53:09 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:53:09 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:53:09 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:53:09 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:53:09 UTC
+Rendered auth/login.html.erb within layouts/auth (0.7ms)
+Completed 200 OK in 18ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:53:09 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 11:53:09 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:53:10 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:53:10 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:53:10 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:53:10 UTC
+Rendered auth/login.html.erb within layouts/auth (0.7ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:53:10 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 11:53:10 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:53:10 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:53:10 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:53:44 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:53:44 UTC
+Rendered auth/login.html.erb within layouts/auth (0.7ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:53:44 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 11:53:44 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:53:44 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:53:44 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:53:44 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:53:44 UTC
+Rendered auth/login.html.erb within layouts/auth (0.6ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:53:44 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 11:53:44 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:53:44 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:53:44 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:53:59 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:53:59 UTC
+Rendered auth/login.html.erb within layouts/auth (0.6ms)
+Compiled bootstrap.css  (1ms)  (pid 89683)
+Completed 200 OK in 27ms (Views: 26.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:53:59 -0400 2012
+Served asset /bootstrap.css - 200 OK (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 11:53:59 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:53:59 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:53:59 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:57:42 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:57:42 UTC
+Rendered auth/login.html.erb within layouts/auth (0.8ms)
+Compiled bootstrap.css  (1ms)  (pid 89683)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:57:42 -0400 2012
+Served asset /bootstrap.css - 200 OK (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 11:57:42 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:57:42 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:57:42 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 11:57:43 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 16:57:43 UTC
+Rendered auth/login.html.erb within layouts/auth (0.6ms)
+Completed 200 OK in 19ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:57:43 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 11:57:43 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:57:43 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 11:57:43 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Jun 12 11:59:03 -0400 2012
+  Processing by HomeController#index as HTML
+[Session Expires At] 2012-06-12 16:59:03 UTC
+Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 61ms (Views: 60.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 11:59:04 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 11:59:04 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Tue Jun 12 11:59:04 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Tue Jun 12 11:59:04 -0400 2012
+Served asset /jquery.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/auth.js?body=1" for 127.0.0.1 at Tue Jun 12 11:59:04 -0400 2012
+Served asset /auth.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at Tue Jun 12 11:59:04 -0400 2012
+Served asset /bootstrap-alert.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at Tue Jun 12 11:59:04 -0400 2012
+Served asset /bootstrap-button.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at Tue Jun 12 11:59:04 -0400 2012
+Served asset /bootstrap-carousel.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at Tue Jun 12 11:59:04 -0400 2012
+Served asset /bootstrap-collapse.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at Tue Jun 12 11:59:04 -0400 2012
+Served asset /bootstrap-dropdown.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at Tue Jun 12 11:59:04 -0400 2012
+Served asset /bootstrap-modal.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at Tue Jun 12 11:59:04 -0400 2012
+Served asset /bootstrap-popover.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at Tue Jun 12 11:59:04 -0400 2012
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at Tue Jun 12 11:59:04 -0400 2012
+Served asset /bootstrap-tab.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at Tue Jun 12 11:59:04 -0400 2012
+Served asset /bootstrap-tooltip.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at Tue Jun 12 11:59:04 -0400 2012
+Served asset /bootstrap-transition.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at Tue Jun 12 11:59:04 -0400 2012
+Served asset /bootstrap-typeahead.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Tue Jun 12 11:59:04 -0400 2012
+Served asset /home.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Tue Jun 12 11:59:04 -0400 2012
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Tue Jun 12 11:59:04 -0400 2012
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 11:59:04 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at Tue Jun 12 11:59:04 -0400 2012
+Served asset /glyphicons-halflings.png - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Jun 12 12:00:41 -0400 2012
+  Processing by HomeController#index as HTML
+[Session Expires At] 2012-06-12 17:00:41 UTC
+Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 29ms (Views: 28.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 12:00:41 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 12:00:41 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:41 -0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:41 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/auth.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:41 -0400 2012
+Served asset /auth.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:41 -0400 2012
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:41 -0400 2012
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:41 -0400 2012
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:41 -0400 2012
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:41 -0400 2012
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:41 -0400 2012
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:42 -0400 2012
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:42 -0400 2012
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:42 -0400 2012
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:42 -0400 2012
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:42 -0400 2012
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:42 -0400 2012
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:42 -0400 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:42 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:42 -0400 2012
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 12:00:42 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at Tue Jun 12 12:00:42 -0400 2012
+Served asset /glyphicons-halflings.png - 304 Not Modified (0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at Tue Jun 12 12:00:45 -0400 2012
+  Processing by AuthController#logout as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 0ms
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 12:00:45 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 17:00:45 UTC
+Rendered auth/login.html.erb within layouts/auth (0.6ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 12:00:45 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 12:00:45 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 12:00:46 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 12:00:46 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started POST "/login" for 127.0.0.1 at Tue Jun 12 12:00:52 -0400 2012
+  Processing by AuthController#login as HTML
+  Parameters: {"button"=>"", "username"=>"aefa", "authenticity_token"=>"hLV2hJgYNYlvAQc4Ew7ITlNmMkYafPwX9pAHj9K22/0=", "utf8"=>"✓", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`username` = 'aefa' LIMIT 1[0m
+[Session Expires At] 2012-06-12 17:00:53 UTC
+Rendered auth/login.html.erb within layouts/auth (1.0ms)
+Completed 200 OK in 32ms (Views: 20.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 12:00:53 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 12:00:53 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 12:00:53 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 12:00:53 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Jun 12 12:00:56 -0400 2012
+  Processing by HomeController#index as HTML
+[Session Expires At] 2012-06-12 17:00:56 UTC
+Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 27ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 12:00:56 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 12:00:56 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:56 -0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:56 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/auth.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:56 -0400 2012
+Served asset /auth.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:56 -0400 2012
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:56 -0400 2012
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:56 -0400 2012
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:56 -0400 2012
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:56 -0400 2012
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:56 -0400 2012
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:56 -0400 2012
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:56 -0400 2012
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:56 -0400 2012
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:56 -0400 2012
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:56 -0400 2012
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:56 -0400 2012
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:56 -0400 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:56 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:56 -0400 2012
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 12:00:56 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at Tue Jun 12 12:00:56 -0400 2012
+Served asset /glyphicons-halflings.png - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Jun 12 12:00:58 -0400 2012
+  Processing by UsersController#index as HTML
+[Session Expires At] 2012-06-12 17:00:58 UTC
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` 
+Rendered users/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 31ms (Views: 29.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 12:00:59 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 12:00:59 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:59 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:59 -0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:59 -0400 2012
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/auth.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:59 -0400 2012
+Served asset /auth.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:59 -0400 2012
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:59 -0400 2012
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:59 -0400 2012
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:59 -0400 2012
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:59 -0400 2012
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:59 -0400 2012
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:59 -0400 2012
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:59 -0400 2012
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:59 -0400 2012
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:59 -0400 2012
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:59 -0400 2012
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:59 -0400 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:59 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Tue Jun 12 12:00:59 -0400 2012
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 12:00:59 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at Tue Jun 12 12:00:59 -0400 2012
+Served asset /glyphicons-halflings.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at Tue Jun 12 12:01:01 -0400 2012
+  Processing by UsersController#new as HTML
+[Session Expires At] 2012-06-12 17:01:01 UTC
+Rendered users/_form.html.erb (8.8ms)
+Rendered users/new.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 43ms (Views: 41.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 12:01:01 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 12:01:01 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:01 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:01 -0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/auth.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:01 -0400 2012
+Served asset /auth.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:01 -0400 2012
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:01 -0400 2012
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:01 -0400 2012
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:01 -0400 2012
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:01 -0400 2012
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:01 -0400 2012
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:01 -0400 2012
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:01 -0400 2012
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:01 -0400 2012
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:01 -0400 2012
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:01 -0400 2012
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:01 -0400 2012
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:01 -0400 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:01 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:01 -0400 2012
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at Tue Jun 12 12:01:01 -0400 2012
+Served asset /glyphicons-halflings.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 12:01:01 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Tue Jun 12 12:01:09 -0400 2012
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Create User", "authenticity_token"=>"hLV2hJgYNYlvAQc4Ew7ITlNmMkYafPwX9pAHj9K22/0=", "utf8"=>"✓", "user"=>{"password_confirmation"=>"[FILTERED]", "username"=>"evan", "password"=>"[FILTERED]", "email"=>"evan.mcewen@gmail.com"}}
+[Session Expires At] 2012-06-12 17:01:09 UTC
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (1.1ms)[0m  SELECT 1 FROM `users` WHERE `users`.`username` = BINARY 'evan' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'evan.mcewen@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (5.1ms)[0m  INSERT INTO `users` (`created_at`, `email`, `password_digest`, `updated_at`, `username`) VALUES ('2012-06-12 16:01:09', 'evan.mcewen@gmail.com', '$2a$10$ywMeXX0a196v2OTGJykQouKW0QMCsVnkcfoq5v35MxWPUqaurnW3u', '2012-06-12 16:01:09', 'evan')
+  [1m[36m (1.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 136ms
+
+
+Started GET "/users/2" for 127.0.0.1 at Tue Jun 12 12:01:09 -0400 2012
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+[Session Expires At] 2012-06-12 17:01:09 UTC
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+Rendered users/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 42ms (Views: 37.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 12:01:09 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 12:01:09 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:09 -0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/auth.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:09 -0400 2012
+Served asset /auth.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:09 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:09 -0400 2012
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:09 -0400 2012
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:09 -0400 2012
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:09 -0400 2012
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:09 -0400 2012
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:09 -0400 2012
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:09 -0400 2012
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:09 -0400 2012
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:09 -0400 2012
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:09 -0400 2012
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:09 -0400 2012
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:09 -0400 2012
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:09 -0400 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:09 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:09 -0400 2012
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 12:01:09 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at Tue Jun 12 12:01:09 -0400 2012
+Served asset /glyphicons-halflings.png - 304 Not Modified (0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at Tue Jun 12 12:01:13 -0400 2012
+  Processing by AuthController#logout as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 12:01:13 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 17:01:13 UTC
+Rendered auth/login.html.erb within layouts/auth (0.7ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 12:01:13 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 12:01:13 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 12:01:13 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 12:01:13 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started POST "/login" for 127.0.0.1 at Tue Jun 12 12:01:18 -0400 2012
+  Processing by AuthController#login as HTML
+  Parameters: {"button"=>"", "username"=>"evan", "authenticity_token"=>"eSX/TlFNNZAKJAW0y0kq2oK4b2FDybqH/+XKi4QyV+8=", "utf8"=>"✓", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`username` = 'evan' LIMIT 1[0m
+[Session Expires At] 2012-06-12 17:01:19 UTC
+Redirected to http://localhost:3000/
+Completed 302 Found in 108ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Jun 12 12:01:19 -0400 2012
+  Processing by HomeController#index as HTML
+[Session Expires At] 2012-06-12 17:01:19 UTC
+Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 30ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 12:01:19 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 12:01:19 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/auth.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:19 -0400 2012
+Served asset /auth.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:19 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:19 -0400 2012
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:19 -0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:19 -0400 2012
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:19 -0400 2012
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:19 -0400 2012
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:19 -0400 2012
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:19 -0400 2012
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:19 -0400 2012
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:19 -0400 2012
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:19 -0400 2012
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:19 -0400 2012
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:19 -0400 2012
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:19 -0400 2012
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:19 -0400 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:19 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:19 -0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 12:01:19 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at Tue Jun 12 12:01:19 -0400 2012
+Served asset /glyphicons-halflings.png - 304 Not Modified (0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at Tue Jun 12 12:01:26 -0400 2012
+  Processing by AuthController#logout as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 0ms
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 12:01:26 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 17:01:26 UTC
+Rendered auth/login.html.erb within layouts/auth (0.6ms)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 12:01:26 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 12:01:26 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 12:01:26 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 12:01:26 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Jun 12 12:01:51 -0400 2012
+  Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 12:01:51 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 17:01:51 UTC
+Rendered auth/login.html.erb within layouts/auth (48.8ms)
+Completed 200 OK in 71ms (Views: 70.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 12:01:51 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 12:01:51 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 12:01:51 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 12:01:51 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started POST "/login" for 127.0.0.1 at Tue Jun 12 12:01:55 -0400 2012
+  Processing by AuthController#login as HTML
+  Parameters: {"button"=>"", "username"=>"evan", "authenticity_token"=>"xSgRG0nSYN5L1Zbj0g1mj4J6MlMW4dWI9xLyPSdg0X0=", "utf8"=>"✓", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`username` = 'evan' LIMIT 1
+[Session Expires At] 2012-06-12 17:01:55 UTC
+Redirected to http://localhost:3000/
+Completed 302 Found in 109ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Jun 12 12:01:55 -0400 2012
+  Processing by HomeController#index as HTML
+[Session Expires At] 2012-06-12 17:01:55 UTC
+Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 31ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 12:01:55 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 12:01:55 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:55 -0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:55 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/auth.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:55 -0400 2012
+Served asset /auth.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:55 -0400 2012
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:55 -0400 2012
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:55 -0400 2012
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:55 -0400 2012
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:55 -0400 2012
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:55 -0400 2012
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:55 -0400 2012
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:55 -0400 2012
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:55 -0400 2012
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:55 -0400 2012
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:55 -0400 2012
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:55 -0400 2012
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:55 -0400 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:55 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:55 -0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at Tue Jun 12 12:01:55 -0400 2012
+Served asset /glyphicons-halflings.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 12:01:55 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Jun 12 12:01:59 -0400 2012
+  Processing by HomeController#index as HTML
+[Session Expires At] 2012-06-12 17:01:59 UTC
+Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 28ms (Views: 27.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 12:01:59 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 12:01:59 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:59 -0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:59 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/auth.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:59 -0400 2012
+Served asset /auth.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:59 -0400 2012
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:59 -0400 2012
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:59 -0400 2012
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:59 -0400 2012
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:59 -0400 2012
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:59 -0400 2012
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:59 -0400 2012
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:59 -0400 2012
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:59 -0400 2012
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:59 -0400 2012
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:59 -0400 2012
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:59 -0400 2012
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:59 -0400 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:59 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Tue Jun 12 12:01:59 -0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 12:01:59 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at Tue Jun 12 12:01:59 -0400 2012
+Served asset /glyphicons-halflings.png - 304 Not Modified (0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at Tue Jun 12 12:02:17 -0400 2012
+  Processing by AuthController#logout as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 0ms
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 12:02:17 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 17:02:17 UTC
+Rendered auth/login.html.erb within layouts/auth (0.7ms)
+Completed 200 OK in 20ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 12:02:17 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 12:02:17 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 12:02:17 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 12:02:17 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Jun 12 12:02:20 -0400 2012
+  Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms
+
+
+Started GET "/login" for 127.0.0.1 at Tue Jun 12 12:02:20 -0400 2012
+  Processing by AuthController#login as HTML
+[Session Expires At] 2012-06-12 17:02:20 UTC
+Rendered auth/login.html.erb within layouts/auth (0.6ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Tue Jun 12 12:02:20 -0400 2012
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at Tue Jun 12 12:02:20 -0400 2012
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/linen.png" for 127.0.0.1 at Tue Jun 12 12:02:20 -0400 2012
+Served asset /linen.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Tue Jun 12 12:02:20 -0400 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)

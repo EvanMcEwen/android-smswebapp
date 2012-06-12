@@ -3,7 +3,7 @@
 <head>
 	<title>Android SMS Web Administration</title>
 	<%= stylesheet_link_tag    "bootstrap.css" %>
-	<%= stylesheet_link_tag    "bootstrap-responsive.css" %>
+	<%= stylesheet_link_tag    "responsive.css" %>
 	<%= javascript_include_tag "application" %>
 	<%= csrf_meta_tags %>
 	<style type="text/css">
@@ -34,7 +34,7 @@
             <ul class="dropdown-menu">
               <li><a href="#">Profile</a></li>
               <li class="divider"></li>
-              <li><a href="#">Sign Out</a></li>
+              <li><a href="/logout">Sign Out</a></li>
             </ul>
           </div>
           <div class="nav-collapse">
@@ -47,7 +47,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="container-fluid">
       <div class="row-fluid">
         <div class="span12">

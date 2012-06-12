@@ -1,0 +1,31 @@
+<div class="container">
+	<div class="row">
+		<div class="span8 offset2">
+			<div class="hero-unit hero-unit-login">
+				<h1>Welcome</h1>
+				<p>to the <strong>android</strong> sms administration system</p>
+				<%= form_tag '/login', :class => 'form-horizontal' do %>
+					<fieldset>
+							<div class="span5" style="margin-top: 15px">
+								<div class="control-group">
+									<%= label_tag 'username', nil, :class => 'control-label' %>
+										<div class="controls">
+											<%= text_field_tag 'username' %>
+										</div>
+								</div>
+								<div class="control-group">
+									<%= label_tag 'password', nil, :class => 'control-label' %>
+										<div class="controls">
+											<%= password_field_tag 'password' %>
+										</div>
+								</div>
+								<div class="form-actions form-actions-login">
+									<%= button_tag '<i class="icon-white icon-user"></i> Login'.html_safe, :class => "btn btn-primary"  %>
+								</div>
+							</div>
+					</fieldset>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</div>
