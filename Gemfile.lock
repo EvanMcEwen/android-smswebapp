@@ -32,6 +32,9 @@ GEM
     arel (2.2.3)
     bcrypt-ruby (3.0.1)
     builder (3.0.0)
+    c2dm (0.2.2)
+      httparty
+      json
     coffee-rails (3.1.1)
       coffee-script (>= 2.2.0)
       railties (~> 3.1.0)
@@ -43,6 +46,9 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     hike (1.2.1)
+    httparty (0.8.3)
+      multi_json (~> 1.0)
+      multi_xml
     i18n (0.6.0)
     jquery-rails (1.0.19)
       railties (~> 3.0)
@@ -54,6 +60,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.18)
     multi_json (1.3.6)
+    multi_xml (0.5.1)
     mysql2 (0.3.11)
     polyglot (0.3.3)
     rack (1.3.6)
@@ -109,6 +116,7 @@ PLATFORMS
 
 DEPENDENCIES
   bcrypt-ruby
+  c2dm
   coffee-rails (~> 3.1.1)
   jquery-rails
   json

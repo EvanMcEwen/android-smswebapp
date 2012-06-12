@@ -8,6 +8,7 @@ gem 'rails', '3.1.3'
 gem 'sqlite3'
 gem 'mysql2'
 gem 'bcrypt-ruby'
+gem 'c2dm'
 
 gem 'json'
 
