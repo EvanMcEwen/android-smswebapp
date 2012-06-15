@@ -1,5 +1,9 @@
 Smswebapp::Application.routes.draw do
   
+  get "device/create"
+
+  get "for/device"
+
   match "login" => "auth#login"
   match "logout" => "auth#logout"
   match "signup" => "users#new"
