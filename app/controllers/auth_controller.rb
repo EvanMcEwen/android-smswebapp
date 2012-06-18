@@ -10,7 +10,8 @@ class AuthController < ApplicationController
 
   def mobile_login
     session[:user_id] = User.authenticate(params[:username], params[:password]) if params[:username]
-
+    update_session_expiry
+    
     render :json => {:status => 1} if !session[:user_id].nil?
   end
 
