@@ -1,8 +1,8 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
-  before_filter :ensure_user_logged_in, :except => [:login, :logout, :mobile_login]
-  before_filter :session_expiry, :except => [:login, :logout, :mobile_login]
-  before_filter :update_session_expiry, :except => [:login, :logout, :mobile_login]
+  before_filter :ensure_user_logged_in, :except => [:login, :logout]
+  before_filter :session_expiry, :except => [:login, :logout]
+  before_filter :update_session_expiry, :except => [:login, :logout]
 
   
   private
