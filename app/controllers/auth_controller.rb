@@ -11,7 +11,7 @@ class AuthController < ApplicationController
   def mobile_login
     @user = User.authenticate(params[:username], params[:password]) if params[:username]
 
-    render :json => {:status => 1} if !@user.nil?
+    render :json => {:status => 1} if !@user.nil? : render :json => {:status => 0}
   end
 
   def logout
