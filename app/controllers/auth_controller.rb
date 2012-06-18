@@ -10,7 +10,6 @@ class AuthController < ApplicationController
         format.html { redirect_to '/' }
         format.json { render :json => {:status => 1} }
       else
-        format.html { redirect_to '/login' }
         format.json { render :json => {:status => 0} }
       end
     end
