@@ -6,8 +6,7 @@
 development:
   adapter: mysql2
   database: smswebapp-dev
-  user: root
-  password:
+  username: smswebapp
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
