@@ -1,5 +1,5 @@
 class DeviceController < ApplicationController
-	skip_before_filter :ensure_user_logged_in, :only => [:create]
+	skip_before_filter :ensure_user_logged_in
   
   def create
     @device = Device.new
@@ -16,5 +16,4 @@ class DeviceController < ApplicationController
       end
     end
   end
-
 end

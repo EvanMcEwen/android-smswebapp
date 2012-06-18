@@ -5,7 +5,15 @@ class AuthController < ApplicationController
     session[:user_id] = User.authenticate(params[:username], params[:password]) if params[:username]
     update_session_expiry
     
-    redirect_to '/' if !session[:user_id].nil?
+    respond_to do |format|
+      if !session[:user_id].nil?
+        format.html { redirect_to '/' }
+        format.json { render :json => {:status => 1} }
+      else
+        format.html { redirect_to '/login' }
+        format.json { render :json => {:status => 0} }
+      end
+    end
   end
 
   def logout
