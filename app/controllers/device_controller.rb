@@ -1,19 +1,17 @@
-class DeviceController < ApplicationController
-	skip_before_filter :ensure_user_logged_in
+class DevicesController < ApplicationController
+	skip_before_filter :ensure_user_logged_in, :session_expiry, :update_session_expiry
   
   def create
-    @device = Device.new
-    @device.device_id = params[:device][:device_id]
-    @device.reg_id = params[:device][:reg_id]
-    @device.user = User.find_by_username(params[:device][:username])
-    @device.nickname = params[:device][:nickname]
+    @device = Device.find_or_create_by_device_id(params[:device_id])
+    @device.device_id = params[:device_id]
+    @device.reg_id = params[:reg_id]
+    @device.user = User.find_by_username(params[:username])
+    @device.nickname = params[:nickname]
     
-    respond_to do |format|
-      if @device.save
-        format.json { render :json => @device, :status => :created, :location => @device }
-      else
-        format.json { render :json => @device.errors, :status => :unprocessable_entity }
-      end
+    if @device.save
+      render :json => {:status => "1" }, :status => :created
+    else
+      render :json => @device.errors, :status => :unprocessable_entity
     end
   end
 end
