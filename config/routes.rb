@@ -1,4 +1,6 @@
 Smswebapp::Application.routes.draw do
+  resources :messages
+
   match "login" => "auth#login"
   match "logout" => "auth#logout"
   match "mlogin" => "auth#mobile_login"

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120612220059) do
+ActiveRecord::Schema.define(:version => 20120705170258) do
 
   create_table "devices", :force => true do |t|
     t.string   "device_id"
@@ -22,6 +22,17 @@ ActiveRecord::Schema.define(:version => 20120612220059) do
   end
 
   add_index "devices", ["user_id"], :name => "index_devices_on_user_id"
+
+  create_table "messages", :force => true do |t|
+    t.string   "origin"
+    t.string   "message"
+    t.string   "timestamp"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "messages", ["user_id"], :name => "index_messages_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "username"
