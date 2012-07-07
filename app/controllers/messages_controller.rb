@@ -46,6 +46,7 @@ class MessagesController < ApplicationController
     @message.message = params[:message]
     @message.timestamp = params[:timestamp]
     @message.user = User.find_by_username(params[:username])
+    @message.destination = params[:destination]
 
     if @message.save
       render :json => {:status => "1"}, :status => :created

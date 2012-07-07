@@ -6,6 +6,7 @@
     <th>Message</th>
     <th>Timestamp</th>
     <th>User</th>
+    <th>Destination</th>
     <th></th>
     <th></th>
     <th></th>
@@ -17,6 +18,7 @@
     <td><%= message.message %></td>
     <td><%= message.timestamp %></td>
     <td><%= message.user %></td>
+    <td><%= message.destination %></td>
     <td><%= link_to 'Show', message %></td>
     <td><%= link_to 'Edit', edit_message_path(message) %></td>
     <td><%= link_to 'Destroy', message, :confirm => 'Are you sure?', :method => :delete %></td>

@@ -3,11 +3,13 @@
 one:
   origin: MyString
   message: MyString
-  timestamp: 
+  timestamp: MyString
   user: 
+  destination: MyString
 
 two:
   origin: MyString
   message: MyString
-  timestamp: 
+  timestamp: MyString
   user: 
+  destination: MyString
