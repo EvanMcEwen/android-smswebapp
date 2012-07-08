@@ -1,5 +1,5 @@
 class OutmessagesController < ApplicationController
-skip_before_filter :ensure_user_logged_in, :only => [:create]
+skip_before_filter :ensure_user_logged_in, :only => [:create, :show]
   # GET /outmessages
   # GET /outmessages.json
   def index
@@ -16,10 +16,7 @@ skip_before_filter :ensure_user_logged_in, :only => [:create]
   def show
     @outmessage = Outmessage.find(params[:id])
 
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render :json => @outmessage }
-    end
+    render :json => @outmessage
   end
 
   # GET /outmessages/new
