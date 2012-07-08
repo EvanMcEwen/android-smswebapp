@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Destination:</b>
+  <%= @outmessage.destination %>
+</p>
+
+<p>
+  <b>Message:</b>
+  <%= @outmessage.message %>
+</p>
+
+<p>
+  <b>Timestamp:</b>
+  <%= @outmessage.timestamp %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @outmessage.user %>
+</p>
+
+
+<%= link_to 'Edit', edit_outmessage_path(@outmessage) %> |
+<%= link_to 'Back', outmessages_path %>
