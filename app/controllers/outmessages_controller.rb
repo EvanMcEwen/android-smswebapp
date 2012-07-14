@@ -25,6 +25,7 @@ skip_before_filter :ensure_user_logged_in, :only => [:create, :show]
     message.destination = @outmessage.destination
     message.save
 
+    @outmessage.destroy
   end
 
   # GET /outmessages/new
