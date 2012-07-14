@@ -42,7 +42,7 @@ skip_before_filter :ensure_user_logged_in, :only => [:create, :show]
     @outmessage.destination = params[:outmessage][:destination]
     @outmessage.message = params[:outmessage][:message]
     @outmessage.timestamp = Time.now.to_f*1000
-    @outmessage.user = User.find_by_username(params[:outmessage][:user])
+    @outmessage.user = User.find_by_username(session[:user_id].username)
 
     respond_to do |format|
       if @outmessage.save
