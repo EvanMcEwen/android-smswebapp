@@ -53,8 +53,7 @@ skip_before_filter :ensure_user_logged_in, :only => [:create, :show]
     @outmessage.timestamp = Time.now.to_f*1000
     @outmessage.user = User.find_by_username(session[:user_id].username)
 
-    if @outmessage.save
-        notify_push_user(@outmessage)
+    notify_push_user(@outmessage) if @outmessage.save
   end
 
   # PUT /outmessages/1
