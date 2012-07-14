@@ -15,8 +15,16 @@ skip_before_filter :ensure_user_logged_in, :only => [:create, :show]
   # GET /outmessages/1.json
   def show
     @outmessage = Outmessage.find(params[:id])
-
     render :json => @outmessage
+
+    message = Message.new
+    message.origin = "DEVICE"
+    message.message = @outmessage.message
+    message.timestamp = @outmessage.timestamp
+    message.user = @outmessage.user
+    message.destination = @outmessage.destination
+    message.save
+
   end
 
   # GET /outmessages/new
