@@ -53,16 +53,8 @@ skip_before_filter :ensure_user_logged_in, :only => [:create, :show]
     @outmessage.timestamp = Time.now.to_f*1000
     @outmessage.user = User.find_by_username(session[:user_id].username)
 
-    respond_to do |format|
-      if @outmessage.save
-        format.html { redirect_to @outmessage, :notice => 'Outmessage was successfully created.' }
-        format.json { render :json => @outmessage, :status => :created, :location => @outmessage }
+    if @outmessage.save
         notify_push_user(@outmessage)
-      else
-        format.html { render :action => "new" }
-        format.json { render :json => @outmessage.errors, :status => :unprocessable_entity }
-      end
-    end
   end
 
   # PUT /outmessages/1
