@@ -1,4 +1,5 @@
 class SynchashesController < ApplicationController
+  skip_before_filter :ensure_user_logged_in, :only => [:create]
   # GET /synchashes
   # GET /synchashes.json
   def index
@@ -40,15 +41,23 @@ class SynchashesController < ApplicationController
   # POST /synchashes
   # POST /synchashes.json
   def create
-    @synchash = Synchash.new(params[:synchash])
+    user = User.find_by_username(params[:username])
+    newIn = false;
+    newOut = false;
 
-    respond_to do |format|
-      if @synchash.save
-        format.html { redirect_to @synchash, :notice => 'Synchash was successfully created.' }
-        format.json { render :json => @synchash, :status => :created, :location => @synchash }
+    if !user.nil?
+      synchash = user.synchash
+      if !synchash.nil?
+        newIn = true if synchash.in_hash != params[:in_hash]
+        newOut = true if synchash.out_hash != params[:out_hash]
+        notify_push_user(synchash,newIn,newOut)
       else
-        format.html { render :action => "new" }
-        format.json { render :json => @synchash.errors, :status => :unprocessable_entity }
+        synchash = Synchash.new
+        synchash.in_hash = params[:in_hash]
+        synchash.out_hash = params[:out_hash]
+        synchash.user = user
+        synchash.save
+        notify_push_user(synchash,true,true)
       end
     end
   end
@@ -78,6 +87,28 @@ class SynchashesController < ApplicationController
     respond_to do |format|
       format.html { redirect_to synchashes_url }
       format.json { head :ok }
+    end
+  end
+
+  private
+  def notify_push_user(synchash,newIn,newOut)
+    if (newIn || newOut)
+      C2DM.authenticate!("sdnotifications@gmail.com", "GlazingPutty", "smswebapp")
+      c2dm = C2DM.new
+
+      notification = {
+        :registration_id => synchash.user.devices[0].reg_id, 
+        :data => {
+          :action => "SMS_SYNC_STATUS",
+          :in_status => newIn,
+          :out_status => newOut,
+          :in_hash => synchash.in_hash,
+          :out_hash => synchash.out_hash
+        },
+        :collapse_key => "smssync" #optional
+      }
+
+      c2dm.send_notification(notification)
     end
   end
 end
