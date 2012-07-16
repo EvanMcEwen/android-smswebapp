@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120707191045) do
+ActiveRecord::Schema.define(:version => 20120716153146) do
 
   create_table "devices", :force => true do |t|
     t.string   "device_id"
@@ -45,6 +45,16 @@ ActiveRecord::Schema.define(:version => 20120707191045) do
   end
 
   add_index "outmessages", ["user_id"], :name => "index_outmessages_on_user_id"
+
+  create_table "synchashes", :force => true do |t|
+    t.string   "in_hash"
+    t.string   "out_hash"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "synchashes", ["user_id"], :name => "index_synchashes_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "username"

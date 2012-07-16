@@ -1,4 +1,6 @@
 Smswebapp::Application.routes.draw do
+  resources :synchashes
+
   resources :outmessages
 
   resources :messages

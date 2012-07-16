@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
 
   has_many :devices
   has_many :messages
+  has_one :synchashes
   
   attr_accessible :email, :password, :password_confirmation
   

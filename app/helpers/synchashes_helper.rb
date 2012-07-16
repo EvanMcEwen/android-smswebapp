@@ -1,0 +1,2 @@
+module SynchashesHelper
+end

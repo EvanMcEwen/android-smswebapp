@@ -1,0 +1,27 @@
+<h1>Listing synchashes</h1>
+
+<table>
+  <tr>
+    <th>In hash</th>
+    <th>Out hash</th>
+    <th>User</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @synchashes.each do |synchash| %>
+  <tr>
+    <td><%= synchash.in_hash %></td>
+    <td><%= synchash.out_hash %></td>
+    <td><%= synchash.user %></td>
+    <td><%= link_to 'Show', synchash %></td>
+    <td><%= link_to 'Edit', edit_synchash_path(synchash) %></td>
+    <td><%= link_to 'Destroy', synchash, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Synchash', new_synchash_path %>

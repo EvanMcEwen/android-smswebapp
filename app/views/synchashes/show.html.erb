@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>In hash:</b>
+  <%= @synchash.in_hash %>
+</p>
+
+<p>
+  <b>Out hash:</b>
+  <%= @synchash.out_hash %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @synchash.user %>
+</p>
+
+
+<%= link_to 'Edit', edit_synchash_path(@synchash) %> |
+<%= link_to 'Back', synchashes_path %>

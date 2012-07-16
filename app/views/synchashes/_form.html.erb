@@ -1,0 +1,29 @@
+<%= form_for(@synchash) do |f| %>
+  <% if @synchash.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@synchash.errors.count, "error") %> prohibited this synchash from being saved:</h2>
+
+      <ul>
+      <% @synchash.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :in_hash %><br />
+    <%= f.text_field :in_hash %>
+  </div>
+  <div class="field">
+    <%= f.label :out_hash %><br />
+    <%= f.text_field :out_hash %>
+  </div>
+  <div class="field">
+    <%= f.label :user %><br />
+    <%= f.text_field :user %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

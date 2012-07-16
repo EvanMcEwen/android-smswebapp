@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  in_hash: MyString
+  out_hash: MyString
+  user: 
+
+two:
+  in_hash: MyString
+  out_hash: MyString
+  user: 
