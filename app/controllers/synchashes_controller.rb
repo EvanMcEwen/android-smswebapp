@@ -65,17 +65,15 @@ class SynchashesController < ApplicationController
   # PUT /synchashes/1
   # PUT /synchashes/1.json
   def update
-    @synchash = Synchash.find(params[:id])
+    user = User.find_by_username(params[:username])
+    synchash = user.synchash
 
-    respond_to do |format|
-      if @synchash.update_attributes(params[:synchash])
-        format.html { redirect_to @synchash, :notice => 'Synchash was successfully updated.' }
-        format.json { head :ok }
-      else
-        format.html { render :action => "edit" }
-        format.json { render :json => @synchash.errors, :status => :unprocessable_entity }
-      end
-    end
+    synchash.in_hash = params[:in_hash] if params[:in_status]
+    synchash.out_hash = params[:out_hash] if params[:out_status]
+    if (synchash.save)
+      render :json => {:status => 1}
+    else
+      render :json => {:status => 0}
   end
 
   # DELETE /synchashes/1
