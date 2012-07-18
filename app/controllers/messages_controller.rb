@@ -46,9 +46,9 @@ class MessagesController < ApplicationController
         i = 0
         while i < params[:total_in_messages] do
           message = Message.new()
-          message.origin = params[:in_messages]["sms" + i.to_s][number]
-          message.timestamp = params[:in_messages]["sms" + i.to_s][timestamp]
-          message.message = params[:in_messages]["sms" + i.to_s][message]
+          message.origin = params[:in_messages]["sms" + i.to_s][:number]
+          message.timestamp = params[:in_messages]["sms" + i.to_s][:timestamp]
+          message.message = params[:in_messages]["sms" + i.to_s][:message]
           message.user = User.find_by_username(params[:username])
           message.save
           i += 1
@@ -59,14 +59,15 @@ class MessagesController < ApplicationController
         while i < params[:total_out_messages] do
           message = Message.new()
           message.origin = "DEVICE"
-          message.destination = params[:out_messages]["sms" + i.to_s][number]
-          message.timestamp = params[:out_messages]["sms" + i.to_s][timestamp]
-          message.message = params[:out_messages]["sms" + i.to_s][message]
+          message.destination = params[:out_messages]["sms" + i.to_s][:number]
+          message.timestamp = params[:out_messages]["sms" + i.to_s][:timestamp]
+          message.message = params[:out_messages]["sms" + i.to_s][:message]
           message.user = User.find_by_username(params[:username])
           message.save
           i += 1
         end
       end
+      render :json => {:status => "1"}, :status => :created
     else
       @message = Message.new()
       @message.origin = params[:origin]
