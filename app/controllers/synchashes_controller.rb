@@ -53,8 +53,8 @@ class SynchashesController < ApplicationController
         render_output(synchash,newIn,newOut)
       else
         synchash = Synchash.new
-        synchash.in_hash = params[:in_hash]
-        synchash.out_hash = params[:out_hash]
+        synchash.in_hash = "empty"
+        synchash.out_hash = "empty"
         synchash.user = user
         synchash.save
         render_output(synchash,true,true)
