@@ -74,6 +74,7 @@ class SynchashesController < ApplicationController
       render :json => {:status => 1}
     else
       render :json => {:status => 0}
+    end
   end
 
   # DELETE /synchashes/1
