@@ -1,5 +1,5 @@
 class SynchashesController < ApplicationController
-  skip_before_filter :ensure_user_logged_in, :only => [:create]
+  skip_before_filter :ensure_user_logged_in, :only => [:create, :update]
   # GET /synchashes
   # GET /synchashes.json
   def index
