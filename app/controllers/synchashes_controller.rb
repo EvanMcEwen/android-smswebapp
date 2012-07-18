@@ -48,16 +48,16 @@ class SynchashesController < ApplicationController
     if !user.nil?
       synchash = user.synchash
       if !synchash.nil?
-        newIn = true if synchash.in_hash != params[:in_hash]
-        newOut = true if synchash.out_hash != params[:out_hash]
-        notify_push_user(synchash,newIn,newOut)
+        newIn = !synchash.in_hash.eql?(params[:in_hash])
+        newOut = !synchash.out_hash.eql?(params[:out_hash])
+        render_output(synchash,newIn,newOut)
       else
         synchash = Synchash.new
         synchash.in_hash = params[:in_hash]
         synchash.out_hash = params[:out_hash]
         synchash.user = user
         synchash.save
-        notify_push_user(synchash,true,true)
+        render_output(synchash,true,true)
       end
     end
   end
@@ -91,24 +91,11 @@ class SynchashesController < ApplicationController
   end
 
   private
-  def notify_push_user(synchash,newIn,newOut)
+  def render_output(synchash,newIn,newOut)
     if (newIn || newOut)
-      C2DM.authenticate!("sdnotifications@gmail.com", "GlazingPutty", "smswebapp")
-      c2dm = C2DM.new
-
-      notification = {
-        :registration_id => synchash.user.devices[0].reg_id, 
-        :data => {
-          :action => "SMS_SYNC_STATUS",
-          :in_status => newIn,
-          :out_status => newOut,
-          :in_hash => synchash.in_hash,
-          :out_hash => synchash.out_hash
-        },
-        :collapse_key => "smssync" #optional
-      }
-
-      c2dm.send_notification(notification)
+      render :json => {:sync_status => 1, :new_in_status => newIn, :new_out_status => newOut, :in_hash => synchash.in_hash, :out_hash => synchash.out_hash}
+    else
+      render :json => {:sync_status => 0}
     end
   end
 end
