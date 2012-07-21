@@ -47,6 +47,7 @@ class MessagesController < ApplicationController
         while i < params[:total_in_messages] do
           message = Message.new()
           message.origin = params[:in_messages]["sms" + i.to_s][:number].gsub(/[^0-9]/i, '')
+          message.destination = "DEVICE"
           message.timestamp = params[:in_messages]["sms" + i.to_s][:timestamp]
           message.message = params[:in_messages]["sms" + i.to_s][:message]
           message.user = User.find_by_username(params[:username])
