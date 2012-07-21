@@ -3,7 +3,7 @@ class MessagesController < ApplicationController
   # GET /messages
   # GET /messages.json
   def index
-    @messages = Message.all
+    @messages = Message.find_by_user_id(session[:user_id])
 
     respond_to do |format|
       format.html # index.html.erb
