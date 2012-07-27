@@ -64,7 +64,7 @@
 .nav-list > .active > a:hover {
   color: @white;
   text-shadow: 0 -1px 0 rgba(0,0,0,.2);
-  background-color: @linkColor;
+  background-color: @red;
 }
 .nav-list [class^="icon-"] {
   margin-right: 2px;
@@ -126,6 +126,17 @@
   border: 1px solid #ddd;
   border-bottom-color: transparent;
   cursor: default;
+}
+
+//Custom
+.nav-conversation {
+  text-align: center;
+  font-size: 22px;
+}
+
+.nav-conversation > .active > a,
+.nav-conversation > .active > a:hover {
+  background-color: darken(@grayLighter,3%);
 }
 
 

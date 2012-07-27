@@ -1,15 +1,14 @@
 <div class="container-fluid">
   <div class="row-fluid">
-    <div class="span3">
-    	<h2>Conversations</h2>
-    	<div class="well">
-    		<% if !@conversations.blank? %>
-    		  <% for item in @conversations %>
-    		    <%= item %>
-    		  <% end %>
-    		<% else %>
-    		<% end %>
-    	</div>
-    </div>
-   </div>
-</div>
+        <div class="span3">
+        <h2>Conversations</h2>
+        <% if !@conversations.blank? %>
+            <ul class="nav nav-tabs nav-stacked nav-conversation">
+            <li class="active"><a href="#">Active Class</a></li>
+          <% for item in @conversations %>
+            <li><a href="#"><%= item %></a></li>
+          <% end %>
+            </ul>
+        <% else %>
+        <% end %>
+        </div>

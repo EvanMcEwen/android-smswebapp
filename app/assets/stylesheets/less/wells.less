@@ -16,6 +16,49 @@
   }
 }
 
+.well-conversation {
+  min-height: 300px;
+  padding: 19px;
+  padding-bottom: 3px;
+  margin-bottom: 20px;
+  background-color: darken(@grayLighter,3%);
+  border: 1px solid #eee;
+  border: 1px solid rgba(0,0,0,.05);
+  .border-radius(4px);
+  .box-shadow(inset 0 1px 1px rgba(0,0,0,.05));
+  blockquote {
+    border-color: #ddd;
+    border-color: rgba(0,0,0,.15);
+  }
+  p {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.3em;
+  }
+  .msg {
+    padding: 20px;
+    margin-top: 10px;
+    border-left: 4px solid @red;
+    border-bottom: 1px solid @red;
+  }
+  .msg-to {
+    text-align: right;
+    border-left: none;
+    border-right: 4px solid @green;
+    border-top: 1px solid @green;
+    border-bottom: none;
+  }
+  .messages {
+    max-height: 600px;
+    overflow: scroll;
+  }
+  .reply-area {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 2px groove #FFF;
+  }
+}
+
 // Sizes
 .well-large {
   padding: 24px;
