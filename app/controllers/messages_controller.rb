@@ -14,11 +14,14 @@ class MessagesController < ApplicationController
   # GET /messages/1
   # GET /messages/1.json
   def show
-    @message = Message.find(params[:id])
-
     respond_to do |format|
-      format.html # show.html.erb
-      format.json { render :json => @message }
+      format.html {
+        @messages = Message.find_all_by_user_id(session[:user_id], :conditions => ["origin=? OR destination=?",params[:id],params[:id]], :order => "timestamp DESC")
+        render :layout => false
+      }# show.html.erb
+      format.json { 
+        @message = Message.find(params[:id])
+        render :json => @message }
     end
   end
 
@@ -46,7 +49,10 @@ class MessagesController < ApplicationController
         i = 0
         while i < params[:total_in_messages] do
           message = Message.new()
-          message.origin = params[:in_messages]["sms" + i.to_s][:number].gsub(/[^0-9]/i, '')
+          phoneNum = params[:in_messages]["sms" + i.to_s][:number].gsub(/[^0-9]/i, '')
+          if (phoneNum.size != 10)
+            phoneNum.slice!(0)
+          message.origin = phoneNum
           message.destination = "DEVICE"
           message.timestamp = params[:in_messages]["sms" + i.to_s][:timestamp]
           message.message = params[:in_messages]["sms" + i.to_s][:message]
@@ -59,8 +65,11 @@ class MessagesController < ApplicationController
         i = 0
         while i < params[:total_out_messages] do
           message = Message.new()
+          phoneNum = params[:out_messages]["sms" + i.to_s][:number].gsub(/[^0-9]/i, '')
+          if (phoneNum.size != 10)
+            phoneNum.slice!(0)
           message.origin = "DEVICE"
-          message.destination = params[:out_messages]["sms" + i.to_s][:number].gsub(/[^0-9]/i, '')
+          message.destination = phoneNum
           message.timestamp = params[:out_messages]["sms" + i.to_s][:timestamp]
           message.message = params[:out_messages]["sms" + i.to_s][:message]
           message.user = User.find_by_username(params[:username])
@@ -71,7 +80,10 @@ class MessagesController < ApplicationController
       render :json => {:status => "1"}, :status => :created
     else
       @message = Message.new()
-      @message.origin = params[:origin].gsub(/[^0-9]/i, '')
+      phoneNum = params[:origin].gsub(/[^0-9]/i, '')
+      if (phoneNum.size != 10)
+        phoneNum.slice!(0)
+      @message.origin = phoneNum
       @message.message = params[:message]
       @message.timestamp = params[:timestamp]
       @message.user = User.find_by_username(params[:username])

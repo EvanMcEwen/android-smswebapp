@@ -1,30 +1,7 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <b>Origin:</b>
-  <%= @message.origin %>
-</p>
-
-<p>
-  <b>Message:</b>
-  <%= @message.message %>
-</p>
-
-<p>
-  <b>Timestamp:</b>
-  <%= @message.timestamp %>
-</p>
-
-<p>
-  <b>User:</b>
-  <%= @message.user %>
-</p>
-
-<p>
-  <b>Destination:</b>
-  <%= @message.destination %>
-</p>
-
-
-<%= link_to 'Edit', edit_message_path(@message) %> |
-<%= link_to 'Back', messages_path %>
+<% for message in @messages %>
+  <% if message.origin.eql?("DEVICE") %>
+<p class="msg msg-to"><%= message.message %><small><br/><%= message.timestamp %></small></p>
+  <% else %>
+<p class="msg"><%= message.message %><small><br/><%= message.timestamp %></small></p>
+  <% end %>
+<% end %>
