@@ -50,8 +50,7 @@ class MessagesController < ApplicationController
         while i < params[:total_in_messages] do
           message = Message.new()
           phoneNum = params[:in_messages]["sms" + i.to_s][:number].gsub(/[^0-9]/i, '')
-          if (phoneNum.size != 10)
-            phoneNum.slice!(0)
+          phoneNum.slice!(0) if (phoneNum.size != 10)
           message.origin = phoneNum
           message.destination = "DEVICE"
           message.timestamp = params[:in_messages]["sms" + i.to_s][:timestamp]
@@ -66,8 +65,7 @@ class MessagesController < ApplicationController
         while i < params[:total_out_messages] do
           message = Message.new()
           phoneNum = params[:out_messages]["sms" + i.to_s][:number].gsub(/[^0-9]/i, '')
-          if (phoneNum.size != 10)
-            phoneNum.slice!(0)
+          phoneNum.slice!(0) if (phoneNum.size != 10)
           message.origin = "DEVICE"
           message.destination = phoneNum
           message.timestamp = params[:out_messages]["sms" + i.to_s][:timestamp]
@@ -81,8 +79,7 @@ class MessagesController < ApplicationController
     else
       @message = Message.new()
       phoneNum = params[:origin].gsub(/[^0-9]/i, '')
-      if (phoneNum.size != 10)
-        phoneNum.slice!(0)
+      phoneNum.slice!(0) if (phoneNum.size != 10)
       @message.origin = phoneNum
       @message.message = params[:message]
       @message.timestamp = params[:timestamp]
