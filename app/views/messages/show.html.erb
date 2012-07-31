@@ -1,7 +1,7 @@
 <% for message in @messages %>
   <% if message.origin.eql?("DEVICE") %>
-<p class="msg msg-to"><%= message.message %><small><br/><%= message.timestamp %></small></p>
+<p class="msg msg-to"><%= message.message %><small><br/><%= Time.at(Integer(message.timestamp)/1000) %></small></p>
   <% else %>
-<p class="msg"><%= message.message %><small><br/><%= message.timestamp %></small></p>
+<p class="msg"><%= message.message %><small><br/><%= Time.at(Integer(message.timestamp)/1000) %></small></p>
   <% end %>
 <% end %>

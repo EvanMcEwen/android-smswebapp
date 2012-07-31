@@ -16,7 +16,7 @@ class MessagesController < ApplicationController
   def show
     respond_to do |format|
       format.html {
-        @messages = Message.find_all_by_user_id(session[:user_id], :conditions => ["origin=? OR destination=?",params[:id],params[:id]], :order => "timestamp DESC")
+        @messages = Message.find_all_by_user_id(session[:user_id], :conditions => ["origin=? OR destination=?",params[:id],params[:id]], :order => "timestamp ASC")
         render :layout => false
       }# show.html.erb
       format.json { 
