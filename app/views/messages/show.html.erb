@@ -1,3 +1,4 @@
+<div class="messages">
 <% for message in @messages %>
   <% if message.origin.eql?("DEVICE") %>
 <p class="msg msg-to"><%= message.message %><small><br/><%= Time.at(Integer(message.timestamp)/1000) %></small></p>
@@ -5,3 +6,14 @@
 <p class="msg"><%= message.message %><small><br/><%= Time.at(Integer(message.timestamp)/1000) %></small></p>
   <% end %>
 <% end %>
+</div>
+<div class="reply-area">
+    <div class="control-group">
+      <div class="controls">
+        <div class="input-append input-prepend">
+           <span class="add-on"><i class="icon-envelope"></i></span><input class="span11" name="outmessage[message]" size="16" type="text"><a href="#" class="btn btn-success" type="button">Send</a>
+           <input type="hidden" value="<%= @number %>" name="outmessage[destination]"/>
+        </div>
+      </div>
+    </div>
+</div>

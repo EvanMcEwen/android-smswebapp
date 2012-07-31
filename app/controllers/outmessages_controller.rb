@@ -50,7 +50,7 @@ skip_before_filter :ensure_user_logged_in, :only => [:create, :show]
     @outmessage = Outmessage.new
     @outmessage.destination = params[:outmessage][:destination]
     @outmessage.message = params[:outmessage][:message]
-    @outmessage.timestamp = Time.now.to_f*1000
+    @outmessage.timestamp = "Waiting To Send..."
     @outmessage.user = User.find_by_username(session[:user_id].username)
 
     notify_push_user(@outmessage) if @outmessage.save
