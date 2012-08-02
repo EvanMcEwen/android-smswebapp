@@ -25,7 +25,7 @@ skip_before_filter :ensure_user_logged_in, :only => [:create, :show]
         message = Message.new
         message.origin = "DEVICE"
         message.message = @outmessage.message
-        message.timestamp = @outmessage.timestamp
+        message.timestamp = (Time.now*1000).to_i
         message.user = @outmessage.user
         message.destination = @outmessage.destination
         message.save
