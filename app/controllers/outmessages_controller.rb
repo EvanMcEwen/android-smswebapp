@@ -59,10 +59,10 @@ skip_before_filter :ensure_user_logged_in, :only => [:create, :show]
     @outmessage.user = User.find_by_username(session[:user_id].username)
 
     if @outmessage.save
-      notify_push_user(@outmessage)
       if (params[:ajax_request])
         render :layout => false
       end
+      notify_push_user(@outmessage)
     end
   end
 
