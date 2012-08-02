@@ -21,8 +21,8 @@ function switchConversation(x)
 	if (intervalID == -1337)
 	{
 		intervalID = setInterval(function() {
-			$.get('messages/' + x, function(data) {
-			  $('#well-conversation').html(data);
+			$.get('messages/' + x + '?ajaxrefresh=1', function(data) {
+			  $('.messages').html(data);
 			  $('.messages').scrollTop(99999);
 			});},5000);
 	}
@@ -30,8 +30,8 @@ function switchConversation(x)
 	{
 		clearInterval(intervalID);
 		intervalID = setInterval(function() {
-			$.get('messages/' + x, function(data) {
-			  $('#well-conversation').html(data);
+			$.get('messages/' + x + '?ajaxrefresh=1', function(data) {
+			  $('.messages').html(data);
 			  $('.messages').scrollTop(99999);
 			});},5000);
 	}

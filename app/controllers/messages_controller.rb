@@ -19,6 +19,7 @@ class MessagesController < ApplicationController
         @messages = Message.find_all_by_user_id(session[:user_id], :conditions => ["origin=? OR destination=?",params[:id],params[:id]], :order => "timestamp ASC")
         @outmessages = Outmessage.find_all_by_user_id(session[:user_id], :conditions => ["destination=?",params[:id]])
         @number = params[:id]
+        @ajax_refresh = params[:ajaxrefresh]
         render :layout => false
       }# show.html.erb
       format.json { 
