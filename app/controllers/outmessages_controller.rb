@@ -15,17 +15,23 @@ skip_before_filter :ensure_user_logged_in, :only => [:create, :show]
   # GET /outmessages/1.json
   def show
     @outmessage = Outmessage.find(params[:id])
-    render :json => @outmessage
+    respond_to do |format|
+      format.html {
+        render :layout => false
+      }# show.html.erb
+      format.json { 
+        render :json => @outmessage
 
-    message = Message.new
-    message.origin = "DEVICE"
-    message.message = @outmessage.message
-    message.timestamp = @outmessage.timestamp
-    message.user = @outmessage.user
-    message.destination = @outmessage.destination
-    message.save
+        message = Message.new
+        message.origin = "DEVICE"
+        message.message = @outmessage.message
+        message.timestamp = @outmessage.timestamp
+        message.user = @outmessage.user
+        message.destination = @outmessage.destination
+        message.save
 
-    @outmessage.destroy
+        @outmessage.destroy }
+    end
   end
 
   # GET /outmessages/new
@@ -50,10 +56,14 @@ skip_before_filter :ensure_user_logged_in, :only => [:create, :show]
     @outmessage = Outmessage.new
     @outmessage.destination = params[:outmessage][:destination]
     @outmessage.message = params[:outmessage][:message]
-    @outmessage.timestamp = "Waiting To Send..."
     @outmessage.user = User.find_by_username(session[:user_id].username)
 
-    notify_push_user(@outmessage) if @outmessage.save
+    if @outmessage.save
+      notify_push_user(@outmessage)
+      if (params[:ajax_request])
+        render :layout => false
+      end
+    end
   end
 
   # PUT /outmessages/1
