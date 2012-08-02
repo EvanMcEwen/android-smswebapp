@@ -3,36 +3,42 @@ var intervalID = -1337;
 
 function switchConversation(x)
 {
-	$.get('messages/' + x, function(data) {
-	  $('#well-conversation').html(data);
-	  $('#well-conversation').attr('class', 'well-conversation');
-	  if (!prevActive)
-	  {
-	  	$('#' + x + '_nav').attr('class', 'active');
-	  	prevActive = '#' + x + '_nav';
-	  }
-	  else
-	  {
-	  	$('#' + x + '_nav').attr('class', 'active');
-	  	$(prevActive).removeClass('active');
-	  	prevActive = '#' + x + '_nav';	
-	  }
-	  $('#h2-conversation').html("Conversation with <b>" + x + "</b>");
-	  $('.messages').scrollTop(99999);
-	});
+	$('#well-conversation').attr('class', 'well-conversation');
+	$('#h2-conversation').html("Conversation with <b>" + x + "</b>");
+
+	if (!prevActive)
+	{
+		$('#' + x + '_nav').attr('class', 'active');
+		prevActive = '#' + x + '_nav';
+	}
+	else
+	{
+		$('#' + x + '_nav').attr('class', 'active');
+		$(prevActive).removeClass('active');
+		prevActive = '#' + x + '_nav';	
+	}
 
 	if (intervalID == -1337)
 	{
-		intervalID = setInterval(updateConversation(x),5000);
+		intervalID = setInterval(function() {
+			$.get('messages/' + x, function(data) {
+			  $('#well-conversation').html(data);
+			  $('.messages').scrollTop(99999);
+			});},5000);
 	}
 	else
 	{
 		clearInterval(intervalID);
-		intervalID = setInterval(updateConversation(x),5000);
+		intervalID = setInterval(function() {
+			$.get('messages/' + x, function(data) {
+			  $('#well-conversation').html(data);
+			  $('.messages').scrollTop(99999);
+			});},5000);
 	}
+	refreshConversation(x);
 }
 
-function updateConversation(x)
+function refreshConversation(x)
 {
 	$.get('messages/' + x, function(data) {
 	  $('#well-conversation').html(data);
