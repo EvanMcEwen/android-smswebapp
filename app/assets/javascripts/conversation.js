@@ -1,4 +1,5 @@
 var prevActive = false;
+var intervalID = -1337;
 
 function switchConversation(x)
 {
@@ -17,6 +18,24 @@ function switchConversation(x)
 	  	prevActive = '#' + x + '_nav';	
 	  }
 	  $('#h2-conversation').html("Conversation with <b>" + x + "</b>");
+	  $('.messages').scrollTop(99999);
+	});
+
+	if (intervalID == -1337)
+	{
+		intervalID = setInterval(updateConversation(x),5000);
+	}
+	else
+	{
+		clearInterval(intervalID);
+		intervalID = setInterval(updateConversation(x),5000);
+	}
+}
+
+function updateConversation(x)
+{
+	$.get('messages/' + x, function(data) {
+	  $('#well-conversation').html(data);
 	  $('.messages').scrollTop(99999);
 	});
 }
