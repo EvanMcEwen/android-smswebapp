@@ -24,12 +24,16 @@ function switchConversation(x)
 function sendMessage(address)
 {
 	var messageToSend = $('#messageToSend').val();
+	$('#messageToSend').attr('disabled','disabled');
+	$('#messageSendButton').attr('disabled','disabled');
 	$.post("outmessages", { "outmessage[message]": messageToSend, "outmessage[destination]": address, ajax_request: true },
 	   function(data) {
 		$.get('outmessages/' + data, function(data) {
 		  $('#messageToSend').val("");
 		  $('.messages').append(data);
 		  $('.messages').scrollTop(99999);
+		  $("#messageToSend").removeAttr("disabled");
+		  $("#messageSendButton").removeAttr("disabled");
 		});
 	   });
 }
