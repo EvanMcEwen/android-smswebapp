@@ -5,7 +5,7 @@
         <% if !@conversations.blank? %>
             <ul class="nav nav-tabs nav-stacked nav-conversation">
           <% for item in @conversations %>
-            <li><a href="javascript:switchConversation(<%= item %>)"><%= item %></a></li>
+            <li id="<%= item %>_nav"><a href="javascript:switchConversation(<%= item %>)"><%= item %></a></li>
           <% end %>
             </ul>
         <% else %>
