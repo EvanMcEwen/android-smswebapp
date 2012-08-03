@@ -66,10 +66,19 @@ class SynchashesController < ApplicationController
   # PUT /synchashes/1.json
   def update
     user = User.find_by_username(params[:username])
-    synchash = Synchash.find_or_create_by_user_id(user)
+    synchash = user.synchash
 
-    synchash.in_hash = params[:in_hash] if params[:in_status]
-    synchash.out_hash = params[:out_hash] if params[:out_status]
+    if !synchash.nil?
+      synchash.in_hash = params[:in_hash] if params[:in_status]
+      synchash.out_hash = params[:out_hash] if params[:out_status]
+    else
+      synchash = Synchash.new
+      synchash.in_hash = "empty"
+      synchash.out_hash = "empty"
+      synchash.in_hash = params[:in_hash] if params[:in_status]
+      synchash.out_hash = params[:out_hash] if params[:out_status]
+      synchash.user = user
+    end
     if (synchash.save)
       render :json => {:status => 1}
     else
