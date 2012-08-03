@@ -48,8 +48,8 @@ class SynchashesController < ApplicationController
     if !user.nil?
       synchash = user.synchash
       if !synchash.nil?
-        newIn = !synchash.in_hash.eql?(params[:in_hash])
-        newOut = !synchash.out_hash.eql?(params[:out_hash])
+        newIn = !synchash.in_hash.eql?(params[:in_hash]) if !params[:in_hash].eql?("empty")
+        newOut = !synchash.out_hash.eql?(params[:out_hash]) if !params[:out_hash].eql?("empty")
         render_output(synchash,newIn,newOut)
       else
         synchash = Synchash.new
