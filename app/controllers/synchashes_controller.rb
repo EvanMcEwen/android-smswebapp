@@ -66,7 +66,7 @@ class SynchashesController < ApplicationController
   # PUT /synchashes/1.json
   def update
     user = User.find_by_username(params[:username])
-    synchash = user.synchash
+    synchash = Synchash.find_or_create_by_user_id(user)
 
     synchash.in_hash = params[:in_hash] if params[:in_status]
     synchash.out_hash = params[:out_hash] if params[:out_status]
