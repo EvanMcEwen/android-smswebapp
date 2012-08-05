@@ -104,8 +104,7 @@ skip_before_filter :ensure_user_logged_in, :only => [:create, :show]
       :data => {
         :action => "NEW_SMS_TO_SEND",
         :msg_id => outmessage.id
-      },
-      :collapse_key => "newsms" #optional
+      }
     }
 
     c2dm.send_notification(notification)
