@@ -1,17 +1,17 @@
 Smswebapp::Application.routes.draw do
+  get "search/create"
+
   resources :synchashes
-
   resources :outmessages
-
   resources :messages
+  resources :users
+  resources :devices
 
   match "login" => "auth#login"
   match "logout" => "auth#logout"
   match "mlogin" => "auth#mobile_login"
   match "signup" => "users#new"
-
-  resources :users
-  resources :devices
+  match "search" => "search#lookfor"
 
   root :to => 'home#index'
 
