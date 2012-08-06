@@ -1,5 +1,12 @@
 var prevActive = false;
 var intervalID = -1337;
+var pageHeight = $(window).height();
+var messageHeight = pageHeight - 220;
+var navHeight = pageHeight - 140;
+
+$(document).ready(function() {
+  $('.nav-conversation').css('max-height',navHeight + "px");
+});
 
 function switchConversation(x)
 {
@@ -42,6 +49,7 @@ function refreshConversation(x)
 {
 	$.get('messages/' + x, function(data) {
 	  $('#well-conversation').html(data);
+	  $('.messages').css('max-height',messageHeight + "px");
 	  $('.messages').scrollTop(99999);
 	});
 }

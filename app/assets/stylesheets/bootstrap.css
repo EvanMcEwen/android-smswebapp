@@ -2089,7 +2089,6 @@ table .span24 {
   border-bottom: none;
 }
 .well-conversation .messages {
-  max-height: 600px;
   overflow: scroll;
 }
 .well-conversation .reply-area {
@@ -2835,7 +2834,6 @@ input[type="submit"].btn.btn-mini {
   text-align: center;
   font-size: 22px;
   min-height: 300px;
-  max-height: 710px;
   overflow: scroll;
 }
 .nav-conversation > .active > a,
