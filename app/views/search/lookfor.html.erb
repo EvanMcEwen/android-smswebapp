@@ -1,0 +1,27 @@
+<div class="row-fluid">
+	<div class="span12">
+	<h1 class="page-header">Search results</h1>
+	<table class="table table-bordered table-striped">
+		<thead>
+			<tr>
+				<th>From</th>
+				<th>To</th>
+				<th>Message</th>
+				<th>Date</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+		<% for message in @results %>
+			<tr>
+				<td><%= message.origin.eql?("DEVICE") ? "YOU" : message.origin %></td>
+				<td><%= message.destination.eql?("DEVICE") ? "YOU" : message.destination %></td>
+				<td><%= message.message %></td>
+				<td><%= Time.at(Integer(message.timestamp)/1000) %></td>
+				<td><a href="/?number=<%= message.origin.eql?("DEVICE") ? message.destination : message.origin %>" class="btn btn-success">View Conversation</a></td>
+			</tr>
+		<% end %>
+		</tbody>
+	</table>
+	</div>
+</div>
