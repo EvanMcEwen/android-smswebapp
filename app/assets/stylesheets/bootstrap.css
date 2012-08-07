@@ -2089,7 +2089,10 @@ table .span24 {
   border-bottom: none;
 }
 .well-conversation .messages {
-  overflow-y: scroll;
+  overflow: auto;
+}
+.well-conversation #wrapper {
+  overflow: hidden;
 }
 .well-conversation .reply-area {
   margin-top: 10px;
