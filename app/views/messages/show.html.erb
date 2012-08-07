@@ -1,5 +1,6 @@
 <% if @ajax_refresh.to_i != 1 %>
-	<div class="messages">
+	<div id="wrapper">
+	<div class="messages" id="messages">
 	<% for message in @messages %>
 	  <% if message.origin.eql?("DEVICE") %>
 	<p class="msg msg-to"><%= message.message %><small><br/><%= Time.at(Integer(message.timestamp)/1000) %></small></p>
@@ -20,6 +21,7 @@
 	        </div>
 	      </div>
 	    </div>
+	</div>
 	</div>
 <% else %>
 	<% for message in @messages %>

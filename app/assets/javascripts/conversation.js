@@ -5,6 +5,7 @@ var messageHeight = pageHeight - 220;
 var navHeight = pageHeight - 140;
 var initalBottomScroll = 0;
 
+var textareaWidth = 0;
 $(document).ready(function() {
   $('.nav-conversation').css('max-height',navHeight + "px");
 });
@@ -31,6 +32,8 @@ function switchConversation(x)
 		intervalID = setInterval(function() {
 			$.get('messages/' + x + '?ajaxrefresh=1', function(data) {
 			  $('.messages').html(data);
+			  textareaWidth = document.getElementById("messages").scrollWidth;
+			  document.getElementById("wrapper").style.width = textareaWidth + "px";
 			  if ($('.messages').scrollTop() >= initalBottomScroll)
 			  {
 			  	$('.messages').scrollTop(99999);
@@ -44,6 +47,8 @@ function switchConversation(x)
 		intervalID = setInterval(function() {
 			$.get('messages/' + x + '?ajaxrefresh=1', function(data) {
 			  $('.messages').html(data);
+			  textareaWidth = document.getElementById("messages").scrollWidth;
+			  document.getElementById("wrapper").style.width = textareaWidth + "px";
 			  if ($('.messages').scrollTop() >= initalBottomScroll)
 			  {
 			  	$('.messages').scrollTop(99999);
@@ -61,6 +66,8 @@ function refreshConversation(x)
 	  $('.messages').css('max-height',messageHeight + "px");
 	  $('.messages').scrollTop(99999);
 	  initalBottomScroll = $('.messages').scrollTop();
+	  textareaWidth = document.getElementById("messages").scrollWidth;
+	  document.getElementById("wrapper").style.width = textareaWidth + "px";
 	});
 }
 
