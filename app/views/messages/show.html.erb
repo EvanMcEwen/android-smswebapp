@@ -1,5 +1,4 @@
 <% if @ajax_refresh.to_i != 1 %>
-	<div id="wrapper">
 	<div class="messages" id="messages">
 	<% for message in @messages %>
 	  <% if message.origin.eql?("DEVICE") %>
@@ -21,7 +20,6 @@
 	        </div>
 	      </div>
 	    </div>
-	</div>
 	</div>
 <% else %>
 	<% for message in @messages %>

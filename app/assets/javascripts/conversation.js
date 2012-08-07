@@ -5,7 +5,6 @@ var messageHeight = pageHeight - 220;
 var navHeight = pageHeight - 140;
 var initalBottomScroll = 0;
 
-var textareaWidth = 0;
 $(document).ready(function() {
   $('.nav-conversation').css('max-height',navHeight + "px");
 });
@@ -62,8 +61,6 @@ function refreshConversation(x)
 	  $('.messages').css('max-height',messageHeight + "px");
 	  $('.messages').scrollTop(99999);
 	  initalBottomScroll = $('.messages').scrollTop();
-	  textareaWidth = document.getElementById("messages").scrollWidth;
-	  document.getElementById("wrapper").style.width = textareaWidth + "px";
 	});
 }
 
