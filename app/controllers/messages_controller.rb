@@ -47,6 +47,7 @@ class MessagesController < ApplicationController
   # POST /messages
   # POST /messages.json
   def create
+    #If the POST contains either parameter we know we are dealing with multiple messages to sync
     if (params.has_key?(:total_in_messages) || params.has_key?(:total_out_messages))
       if (params.has_key?(:total_in_messages))
         i = 0
@@ -79,6 +80,7 @@ class MessagesController < ApplicationController
         end
       end
       render :json => {:status => "1"}, :status => :created
+    #Otherwise it's a single message we are syncing
     else
       @message = Message.new()
       phoneNum = params[:origin].gsub(/[^0-9]/i, '')

@@ -47,11 +47,13 @@ class SynchashesController < ApplicationController
 
     if !user.nil?
       synchash = user.synchash
+      #If the user has a synchash already
       if !synchash.nil?
         newIn = !synchash.in_hash.eql?(params[:in_hash]) if !params[:in_hash].eql?("empty")
         newOut = !synchash.out_hash.eql?(params[:out_hash]) if !params[:out_hash].eql?("empty")
         render_output(synchash,newIn,newOut)
       else
+        #otherwise the user is new! We need to sync everything from their device so set a default hash
         synchash = Synchash.new
         synchash.in_hash = "empty"
         synchash.out_hash = "empty"
@@ -68,10 +70,12 @@ class SynchashesController < ApplicationController
     user = User.find_by_username(params[:username])
     synchash = user.synchash
 
+    #if the user has a synchash, update it
     if !synchash.nil?
       synchash.in_hash = params[:in_hash] if params[:in_status]
       synchash.out_hash = params[:out_hash] if params[:out_status]
     else
+    #otherwise the user is new and has somehow skipped the inital sync. No matter, let's set it up now!
       synchash = Synchash.new
       synchash.in_hash = "empty"
       synchash.out_hash = "empty"
